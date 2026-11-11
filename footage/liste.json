@@ -1,402 +1,545 @@
 [
  {
-  "f": "footage/mixkit/perfume/01.mp4",
-  "u": "https://assets.mixkit.co/videos/20766/20766-720.mp4",
-  "q": "perfume"
+  "f": "footage/mixkit/luxury-woman/01.mp4",
+  "u": "https://assets.mixkit.co/videos/69/69-720.mp4",
+  "q": "luxury-woman"
  },
  {
-  "f": "footage/mixkit/perfume/02.mp4",
-  "u": "https://assets.mixkit.co/videos/20766/20766-720.mp4",
-  "q": "perfume"
+  "f": "footage/mixkit/luxury-woman/02.mp4",
+  "u": "https://assets.mixkit.co/videos/51181/51181-720.mp4",
+  "q": "luxury-woman"
  },
  {
-  "f": "footage/mixkit/perfume/03.mp4",
-  "u": "https://assets.mixkit.co/videos/21695/21695-720.mp4",
-  "q": "perfume"
+  "f": "footage/mixkit/luxury-woman/03.mp4",
+  "u": "https://assets.mixkit.co/videos/73/73-720.mp4",
+  "q": "luxury-woman"
  },
  {
-  "f": "footage/mixkit/perfume/04.mp4",
-  "u": "https://assets.mixkit.co/videos/21695/21695-720.mp4",
-  "q": "perfume"
+  "f": "footage/mixkit/luxury-woman/04.mp4",
+  "u": "https://assets.mixkit.co/videos/13269/13269-720.mp4",
+  "q": "luxury-woman"
  },
  {
-  "f": "footage/mixkit/perfume/05.mp4",
-  "u": "https://assets.mixkit.co/videos/21980/21980-720.mp4",
-  "q": "perfume"
- },
- {
-  "f": "footage/mixkit/perfume/06.mp4",
-  "u": "https://assets.mixkit.co/videos/21980/21980-720.mp4",
-  "q": "perfume"
- },
- {
-  "f": "footage/mixkit/perfume/07.mp4",
-  "u": "https://assets.mixkit.co/videos/24161/24161-720.mp4",
-  "q": "perfume"
- },
- {
-  "f": "footage/mixkit/perfume/08.mp4",
-  "u": "https://assets.mixkit.co/videos/24161/24161-720.mp4",
-  "q": "perfume"
- },
- {
-  "f": "footage/mixkit/luxury/01.mp4",
-  "u": "https://assets.mixkit.co/videos/74/74-1080.mp4",
-  "q": "luxury"
- },
- {
-  "f": "footage/mixkit/luxury/02.mp4",
-  "u": "https://assets.mixkit.co/videos/74/74-720.mp4",
-  "q": "luxury"
- },
- {
-  "f": "footage/mixkit/luxury/03.mp4",
-  "u": "https://assets.mixkit.co/videos/44542/44542-1080.mp4",
-  "q": "luxury"
- },
- {
-  "f": "footage/mixkit/luxury/04.mp4",
-  "u": "https://assets.mixkit.co/videos/44542/44542-720.mp4",
-  "q": "luxury"
- },
- {
-  "f": "footage/mixkit/luxury/05.mp4",
-  "u": "https://assets.mixkit.co/videos/4280/4280-1080.mp4",
-  "q": "luxury"
- },
- {
-  "f": "footage/mixkit/luxury/06.mp4",
-  "u": "https://assets.mixkit.co/videos/4280/4280-720.mp4",
-  "q": "luxury"
- },
- {
-  "f": "footage/mixkit/luxury/07.mp4",
-  "u": "https://assets.mixkit.co/videos/18303/18303-1080.mp4",
-  "q": "luxury"
- },
- {
-  "f": "footage/mixkit/luxury/08.mp4",
-  "u": "https://assets.mixkit.co/videos/18303/18303-720.mp4",
-  "q": "luxury"
- },
- {
-  "f": "footage/mixkit/gold/01.mp4",
-  "u": "https://assets.mixkit.co/videos/2861/2861-1080.mp4",
-  "q": "gold"
- },
- {
-  "f": "footage/mixkit/gold/02.mp4",
-  "u": "https://assets.mixkit.co/videos/2861/2861-720.mp4",
-  "q": "gold"
- },
- {
-  "f": "footage/mixkit/gold/03.mp4",
-  "u": "https://assets.mixkit.co/videos/38406/38406-720.mp4",
-  "q": "gold"
- },
- {
-  "f": "footage/mixkit/gold/04.mp4",
-  "u": "https://assets.mixkit.co/videos/38406/38406-720.mp4",
-  "q": "gold"
- },
- {
-  "f": "footage/mixkit/gold/05.mp4",
-  "u": "https://assets.mixkit.co/videos/2862/2862-1080.mp4",
-  "q": "gold"
- },
- {
-  "f": "footage/mixkit/gold/06.mp4",
-  "u": "https://assets.mixkit.co/videos/2862/2862-720.mp4",
-  "q": "gold"
- },
- {
-  "f": "footage/mixkit/gold/07.mp4",
-  "u": "https://assets.mixkit.co/videos/19215/19215-720.mp4",
-  "q": "gold"
- },
- {
-  "f": "footage/mixkit/gold/08.mp4",
-  "u": "https://assets.mixkit.co/videos/19215/19215-720.mp4",
-  "q": "gold"
- },
- {
-  "f": "footage/mixkit/smoke/01.mp4",
-  "u": "https://assets.mixkit.co/videos/45298/45298-720.mp4",
-  "q": "smoke"
- },
- {
-  "f": "footage/mixkit/smoke/02.mp4",
-  "u": "https://assets.mixkit.co/videos/45298/45298-720.mp4",
-  "q": "smoke"
- },
- {
-  "f": "footage/mixkit/smoke/03.mp4",
-  "u": "https://assets.mixkit.co/videos/1968/1968-1080.mp4",
-  "q": "smoke"
- },
- {
-  "f": "footage/mixkit/smoke/04.mp4",
-  "u": "https://assets.mixkit.co/videos/1968/1968-720.mp4",
-  "q": "smoke"
- },
- {
-  "f": "footage/mixkit/smoke/05.mp4",
-  "u": "https://assets.mixkit.co/videos/1960/1960-1080.mp4",
-  "q": "smoke"
- },
- {
-  "f": "footage/mixkit/smoke/06.mp4",
-  "u": "https://assets.mixkit.co/videos/1960/1960-720.mp4",
-  "q": "smoke"
- },
- {
-  "f": "footage/mixkit/smoke/07.mp4",
-  "u": "https://assets.mixkit.co/videos/8537/8537-720.mp4",
-  "q": "smoke"
- },
- {
-  "f": "footage/mixkit/smoke/08.mp4",
-  "u": "https://assets.mixkit.co/videos/8537/8537-720.mp4",
-  "q": "smoke"
- },
- {
-  "f": "footage/mixkit/woman/01.mp4",
-  "u": "https://assets.mixkit.co/videos/1012/1012-1080.mp4",
-  "q": "woman"
- },
- {
-  "f": "footage/mixkit/woman/02.mp4",
-  "u": "https://assets.mixkit.co/videos/1012/1012-720.mp4",
-  "q": "woman"
- },
- {
-  "f": "footage/mixkit/woman/03.mp4",
-  "u": "https://assets.mixkit.co/videos/1114/1114-1080.mp4",
-  "q": "woman"
- },
- {
-  "f": "footage/mixkit/woman/04.mp4",
-  "u": "https://assets.mixkit.co/videos/1114/1114-720.mp4",
-  "q": "woman"
- },
- {
-  "f": "footage/mixkit/woman/05.mp4",
-  "u": "https://assets.mixkit.co/videos/25586/25586-1080.mp4",
-  "q": "woman"
- },
- {
-  "f": "footage/mixkit/woman/06.mp4",
-  "u": "https://assets.mixkit.co/videos/25586/25586-720.mp4",
-  "q": "woman"
- },
- {
-  "f": "footage/mixkit/woman/07.mp4",
-  "u": "https://assets.mixkit.co/videos/25589/25589-1080.mp4",
-  "q": "woman"
- },
- {
-  "f": "footage/mixkit/woman/08.mp4",
-  "u": "https://assets.mixkit.co/videos/25589/25589-720.mp4",
-  "q": "woman"
- },
- {
-  "f": "footage/mixkit/jewelry/01.mp4",
-  "u": "https://assets.mixkit.co/videos/34611/34611-720.mp4",
-  "q": "jewelry"
- },
- {
-  "f": "footage/mixkit/jewelry/02.mp4",
-  "u": "https://assets.mixkit.co/videos/34611/34611-720.mp4",
-  "q": "jewelry"
- },
- {
-  "f": "footage/mixkit/jewelry/03.mp4",
-  "u": "https://assets.mixkit.co/videos/20877/20877-720.mp4",
-  "q": "jewelry"
- },
- {
-  "f": "footage/mixkit/jewelry/04.mp4",
-  "u": "https://assets.mixkit.co/videos/20877/20877-720.mp4",
-  "q": "jewelry"
- },
- {
-  "f": "footage/mixkit/jewelry/05.mp4",
-  "u": "https://assets.mixkit.co/videos/5218/5218-1080.mp4",
-  "q": "jewelry"
- },
- {
-  "f": "footage/mixkit/jewelry/06.mp4",
-  "u": "https://assets.mixkit.co/videos/5218/5218-720.mp4",
-  "q": "jewelry"
- },
- {
-  "f": "footage/mixkit/jewelry/07.mp4",
-  "u": "https://assets.mixkit.co/videos/51260/51260-1080.mp4",
-  "q": "jewelry"
- },
- {
-  "f": "footage/mixkit/jewelry/08.mp4",
-  "u": "https://assets.mixkit.co/videos/51260/51260-720.mp4",
-  "q": "jewelry"
- },
- {
-  "f": "footage/mixkit/night-city/01.mp4",
-  "u": "https://assets.mixkit.co/videos/49878/49878-720.mp4",
-  "q": "night-city"
- },
- {
-  "f": "footage/mixkit/night-city/02.mp4",
-  "u": "https://assets.mixkit.co/videos/40746/40746-720.mp4",
-  "q": "night-city"
- },
- {
-  "f": "footage/mixkit/night-city/03.mp4",
-  "u": "https://assets.mixkit.co/videos/42048/42048-720.mp4",
-  "q": "night-city"
- },
- {
-  "f": "footage/mixkit/night-city/04.mp4",
-  "u": "https://assets.mixkit.co/videos/40747/40747-720.mp4",
-  "q": "night-city"
- },
- {
-  "f": "footage/mixkit/night-city/05.mp4",
-  "u": "https://assets.mixkit.co/videos/40640/40640-720.mp4",
-  "q": "night-city"
- },
- {
-  "f": "footage/mixkit/night-city/06.mp4",
-  "u": "https://assets.mixkit.co/videos/41161/41161-720.mp4",
-  "q": "night-city"
- },
- {
-  "f": "footage/mixkit/night-city/07.mp4",
-  "u": "https://assets.mixkit.co/videos/42343/42343-720.mp4",
-  "q": "night-city"
- },
- {
-  "f": "footage/mixkit/night-city/08.mp4",
-  "u": "https://assets.mixkit.co/videos/6754/6754-720.mp4",
-  "q": "night-city"
- },
- {
-  "f": "footage/mixkit/desert/01.mp4",
-  "u": "https://assets.mixkit.co/videos/4149/4149-1080.mp4",
-  "q": "desert"
- },
- {
-  "f": "footage/mixkit/desert/02.mp4",
-  "u": "https://assets.mixkit.co/videos/4149/4149-720.mp4",
-  "q": "desert"
- },
- {
-  "f": "footage/mixkit/desert/03.mp4",
-  "u": "https://assets.mixkit.co/videos/4285/4285-1080.mp4",
-  "q": "desert"
- },
- {
-  "f": "footage/mixkit/desert/04.mp4",
-  "u": "https://assets.mixkit.co/videos/4285/4285-720.mp4",
-  "q": "desert"
- },
- {
-  "f": "footage/mixkit/desert/05.mp4",
-  "u": "https://assets.mixkit.co/videos/46061/46061-720.mp4",
-  "q": "desert"
- },
- {
-  "f": "footage/mixkit/desert/06.mp4",
-  "u": "https://assets.mixkit.co/videos/46061/46061-720.mp4",
-  "q": "desert"
- },
- {
-  "f": "footage/mixkit/desert/07.mp4",
-  "u": "https://assets.mixkit.co/videos/47724/47724-720.mp4",
-  "q": "desert"
- },
- {
-  "f": "footage/mixkit/desert/08.mp4",
-  "u": "https://assets.mixkit.co/videos/47724/47724-720.mp4",
-  "q": "desert"
- },
- {
-  "f": "footage/mixkit/fashion/01.mp4",
-  "u": "https://assets.mixkit.co/videos/44556/44556-1080.mp4",
-  "q": "fashion"
- },
- {
-  "f": "footage/mixkit/fashion/02.mp4",
-  "u": "https://assets.mixkit.co/videos/44556/44556-720.mp4",
-  "q": "fashion"
- },
- {
-  "f": "footage/mixkit/fashion/03.mp4",
-  "u": "https://assets.mixkit.co/videos/44555/44555-1080.mp4",
-  "q": "fashion"
- },
- {
-  "f": "footage/mixkit/fashion/04.mp4",
+  "f": "footage/mixkit/luxury-woman/05.mp4",
   "u": "https://assets.mixkit.co/videos/44555/44555-720.mp4",
-  "q": "fashion"
+  "q": "luxury-woman"
  },
  {
-  "f": "footage/mixkit/fashion/05.mp4",
-  "u": "https://assets.mixkit.co/videos/23327/23327-720.mp4",
-  "q": "fashion"
+  "f": "footage/mixkit/luxury-woman/06.mp4",
+  "u": "https://assets.mixkit.co/videos/44545/44545-720.mp4",
+  "q": "luxury-woman"
  },
  {
-  "f": "footage/mixkit/fashion/06.mp4",
-  "u": "https://assets.mixkit.co/videos/23327/23327-720.mp4",
-  "q": "fashion"
+  "f": "footage/mixkit/luxury-woman/07.mp4",
+  "u": "https://assets.mixkit.co/videos/44541/44541-720.mp4",
+  "q": "luxury-woman"
  },
  {
-  "f": "footage/mixkit/fashion/07.mp4",
-  "u": "https://assets.mixkit.co/videos/50641/50641-1080.mp4",
-  "q": "fashion"
+  "f": "footage/mixkit/luxury-woman/08.mp4",
+  "u": "https://assets.mixkit.co/videos/44542/44542-720.mp4",
+  "q": "luxury-woman"
  },
  {
-  "f": "footage/mixkit/fashion/08.mp4",
-  "u": "https://assets.mixkit.co/videos/50641/50641-720.mp4",
-  "q": "fashion"
+  "f": "footage/mixkit/perfume-bottle/01.mp4",
+  "u": "https://assets.mixkit.co/videos/20766/20766-720.mp4",
+  "q": "perfume-bottle"
  },
  {
-  "f": "footage/mixkit/slow-motion/01.mp4",
-  "u": "https://assets.mixkit.co/videos/1170/1170-1080.mp4",
-  "q": "slow-motion"
+  "f": "footage/mixkit/red/01.mp4",
+  "u": "https://assets.mixkit.co/videos/40213/40213-1080.mp4",
+  "q": "red"
  },
  {
-  "f": "footage/mixkit/slow-motion/02.mp4",
-  "u": "https://assets.mixkit.co/videos/1170/1170-720.mp4",
-  "q": "slow-motion"
+  "f": "footage/mixkit/red/02.mp4",
+  "u": "https://assets.mixkit.co/videos/40213/40213-720.mp4",
+  "q": "red"
  },
  {
-  "f": "footage/mixkit/slow-motion/03.mp4",
-  "u": "https://assets.mixkit.co/videos/939/939-1080.mp4",
-  "q": "slow-motion"
+  "f": "footage/mixkit/red/03.mp4",
+  "u": "https://assets.mixkit.co/videos/3839/3839-1080.mp4",
+  "q": "red"
  },
  {
-  "f": "footage/mixkit/slow-motion/04.mp4",
-  "u": "https://assets.mixkit.co/videos/939/939-720.mp4",
-  "q": "slow-motion"
+  "f": "footage/mixkit/red/04.mp4",
+  "u": "https://assets.mixkit.co/videos/3839/3839-720.mp4",
+  "q": "red"
  },
  {
-  "f": "footage/mixkit/slow-motion/05.mp4",
-  "u": "https://assets.mixkit.co/videos/1197/1197-1080.mp4",
-  "q": "slow-motion"
+  "f": "footage/mixkit/red/05.mp4",
+  "u": "https://assets.mixkit.co/videos/33872/33872-1080.mp4",
+  "q": "red"
  },
  {
-  "f": "footage/mixkit/slow-motion/06.mp4",
-  "u": "https://assets.mixkit.co/videos/1197/1197-720.mp4",
-  "q": "slow-motion"
+  "f": "footage/mixkit/red/06.mp4",
+  "u": "https://assets.mixkit.co/videos/33872/33872-720.mp4",
+  "q": "red"
  },
  {
-  "f": "footage/mixkit/slow-motion/07.mp4",
-  "u": "https://assets.mixkit.co/videos/1780/1780-1080.mp4",
-  "q": "slow-motion"
+  "f": "footage/mixkit/red/07.mp4",
+  "u": "https://assets.mixkit.co/videos/41999/41999-1080.mp4",
+  "q": "red"
  },
  {
-  "f": "footage/mixkit/slow-motion/08.mp4",
-  "u": "https://assets.mixkit.co/videos/1780/1780-720.mp4",
-  "q": "slow-motion"
+  "f": "footage/mixkit/red/08.mp4",
+  "u": "https://assets.mixkit.co/videos/41999/41999-720.mp4",
+  "q": "red"
+ },
+ {
+  "f": "footage/mixkit/night-club/01.mp4",
+  "u": "https://assets.mixkit.co/videos/344/344-1080.mp4",
+  "q": "night-club"
+ },
+ {
+  "f": "footage/mixkit/night-club/02.mp4",
+  "u": "https://assets.mixkit.co/videos/344/344-720.mp4",
+  "q": "night-club"
+ },
+ {
+  "f": "footage/mixkit/night-club/03.mp4",
+  "u": "https://assets.mixkit.co/videos/339/339-1080.mp4",
+  "q": "night-club"
+ },
+ {
+  "f": "footage/mixkit/night-club/04.mp4",
+  "u": "https://assets.mixkit.co/videos/339/339-720.mp4",
+  "q": "night-club"
+ },
+ {
+  "f": "footage/mixkit/night-club/05.mp4",
+  "u": "https://assets.mixkit.co/videos/4344/4344-1080.mp4",
+  "q": "night-club"
+ },
+ {
+  "f": "footage/mixkit/night-club/06.mp4",
+  "u": "https://assets.mixkit.co/videos/4344/4344-720.mp4",
+  "q": "night-club"
+ },
+ {
+  "f": "footage/mixkit/night-club/07.mp4",
+  "u": "https://assets.mixkit.co/videos/348/348-1080.mp4",
+  "q": "night-club"
+ },
+ {
+  "f": "footage/mixkit/night-club/08.mp4",
+  "u": "https://assets.mixkit.co/videos/348/348-720.mp4",
+  "q": "night-club"
+ },
+ {
+  "f": "footage/mixkit/elegant/01.mp4",
+  "u": "https://assets.mixkit.co/videos/4043/4043-720.mp4",
+  "q": "elegant"
+ },
+ {
+  "f": "footage/mixkit/elegant/02.mp4",
+  "u": "https://assets.mixkit.co/videos/44787/44787-720.mp4",
+  "q": "elegant"
+ },
+ {
+  "f": "footage/mixkit/elegant/03.mp4",
+  "u": "https://assets.mixkit.co/videos/44070/44070-720.mp4",
+  "q": "elegant"
+ },
+ {
+  "f": "footage/mixkit/elegant/04.mp4",
+  "u": "https://assets.mixkit.co/videos/51541/51541-720.mp4",
+  "q": "elegant"
+ },
+ {
+  "f": "footage/mixkit/elegant/05.mp4",
+  "u": "https://assets.mixkit.co/videos/28888/28888-720.mp4",
+  "q": "elegant"
+ },
+ {
+  "f": "footage/mixkit/elegant/06.mp4",
+  "u": "https://assets.mixkit.co/videos/52407/52407-720.mp4",
+  "q": "elegant"
+ },
+ {
+  "f": "footage/mixkit/elegant/07.mp4",
+  "u": "https://assets.mixkit.co/videos/43774/43774-720.mp4",
+  "q": "elegant"
+ },
+ {
+  "f": "footage/mixkit/elegant/08.mp4",
+  "u": "https://assets.mixkit.co/videos/42151/42151-720.mp4",
+  "q": "elegant"
+ },
+ {
+  "f": "footage/mixkit/party/01.mp4",
+  "u": "https://assets.mixkit.co/videos/14116/14116-720.mp4",
+  "q": "party"
+ },
+ {
+  "f": "footage/mixkit/party/02.mp4",
+  "u": "https://assets.mixkit.co/videos/14116/14116-720.mp4",
+  "q": "party"
+ },
+ {
+  "f": "footage/mixkit/party/03.mp4",
+  "u": "https://assets.mixkit.co/videos/4344/4344-1080.mp4",
+  "q": "party"
+ },
+ {
+  "f": "footage/mixkit/party/04.mp4",
+  "u": "https://assets.mixkit.co/videos/4344/4344-720.mp4",
+  "q": "party"
+ },
+ {
+  "f": "footage/mixkit/party/05.mp4",
+  "u": "https://assets.mixkit.co/videos/48636/48636-720.mp4",
+  "q": "party"
+ },
+ {
+  "f": "footage/mixkit/party/06.mp4",
+  "u": "https://assets.mixkit.co/videos/48636/48636-720.mp4",
+  "q": "party"
+ },
+ {
+  "f": "footage/mixkit/party/07.mp4",
+  "u": "https://assets.mixkit.co/videos/4151/4151-1080.mp4",
+  "q": "party"
+ },
+ {
+  "f": "footage/mixkit/party/08.mp4",
+  "u": "https://assets.mixkit.co/videos/4151/4151-720.mp4",
+  "q": "party"
+ },
+ {
+  "f": "footage/mixkit/hotel/01.mp4",
+  "u": "https://assets.mixkit.co/videos/4198/4198-1080.mp4",
+  "q": "hotel"
+ },
+ {
+  "f": "footage/mixkit/hotel/02.mp4",
+  "u": "https://assets.mixkit.co/videos/4198/4198-720.mp4",
+  "q": "hotel"
+ },
+ {
+  "f": "footage/mixkit/hotel/03.mp4",
+  "u": "https://assets.mixkit.co/videos/21817/21817-720.mp4",
+  "q": "hotel"
+ },
+ {
+  "f": "footage/mixkit/hotel/04.mp4",
+  "u": "https://assets.mixkit.co/videos/21817/21817-720.mp4",
+  "q": "hotel"
+ },
+ {
+  "f": "footage/mixkit/hotel/05.mp4",
+  "u": "https://assets.mixkit.co/videos/36736/36736-720.mp4",
+  "q": "hotel"
+ },
+ {
+  "f": "footage/mixkit/hotel/06.mp4",
+  "u": "https://assets.mixkit.co/videos/36736/36736-720.mp4",
+  "q": "hotel"
+ },
+ {
+  "f": "footage/mixkit/hotel/07.mp4",
+  "u": "https://assets.mixkit.co/videos/22240/22240-720.mp4",
+  "q": "hotel"
+ },
+ {
+  "f": "footage/mixkit/hotel/08.mp4",
+  "u": "https://assets.mixkit.co/videos/22240/22240-720.mp4",
+  "q": "hotel"
+ },
+ {
+  "f": "footage/mixkit/glamour/01.mp4",
+  "u": "https://assets.mixkit.co/videos/52263/52263-720.mp4",
+  "q": "glamour"
+ },
+ {
+  "f": "footage/mixkit/glamour/02.mp4",
+  "u": "https://assets.mixkit.co/videos/51524/51524-720.mp4",
+  "q": "glamour"
+ },
+ {
+  "f": "footage/musique/fashion/01.mp3",
+  "u": "https://assets.mixkit.co/music/130/130.mp3",
+  "q": "fashion",
+  "titre": "Tech House vibes"
+ },
+ {
+  "f": "footage/musique/fashion/02.mp3",
+  "u": "https://assets.mixkit.co/music/623/623.mp3",
+  "q": "fashion",
+  "titre": "Deep Urban"
+ },
+ {
+  "f": "footage/musique/fashion/03.mp3",
+  "u": "https://assets.mixkit.co/music/371/371.mp3",
+  "q": "fashion",
+  "titre": "Cat Walk"
+ },
+ {
+  "f": "footage/musique/fashion/04.mp3",
+  "u": "https://assets.mixkit.co/music/872/872.mp3",
+  "q": "fashion",
+  "titre": "Gimme that Groove!"
+ },
+ {
+  "f": "footage/musique/fashion/05.mp3",
+  "u": "https://assets.mixkit.co/music/132/132.mp3",
+  "q": "fashion",
+  "titre": "Hazy After Hours"
+ },
+ {
+  "f": "footage/musique/fashion/06.mp3",
+  "u": "https://assets.mixkit.co/music/288/288.mp3",
+  "q": "fashion",
+  "titre": "One More Dance"
+ },
+ {
+  "f": "footage/musique/fashion/07.mp3",
+  "u": "https://assets.mixkit.co/music/1210/1210.mp3",
+  "q": "fashion",
+  "titre": "Can&#39;t Get You Off My Mind"
+ },
+ {
+  "f": "footage/musique/fashion/08.mp3",
+  "u": "https://assets.mixkit.co/music/744/744.mp3",
+  "q": "fashion",
+  "titre": "House 02"
+ },
+ {
+  "f": "footage/musique/fashion/09.mp3",
+  "u": "https://assets.mixkit.co/music/471/471.mp3",
+  "q": "fashion",
+  "titre": "Rising Forest"
+ },
+ {
+  "f": "footage/musique/fashion/10.mp3",
+  "u": "https://assets.mixkit.co/music/480/480.mp3",
+  "q": "fashion",
+  "titre": "Curiosity"
+ },
+ {
+  "f": "footage/musique/luxury/01.mp3",
+  "u": "https://assets.mixkit.co/music/105/105.mp3",
+  "q": "luxury",
+  "titre": "See Line Funk"
+ },
+ {
+  "f": "footage/musique/luxury/02.mp3",
+  "u": "https://assets.mixkit.co/music/701/701.mp3",
+  "q": "luxury",
+  "titre": "Pop 08"
+ },
+ {
+  "f": "footage/musique/trap/01.mp3",
+  "u": "https://assets.mixkit.co/music/400/400.mp3",
+  "q": "trap",
+  "titre": "C.B.P.D"
+ },
+ {
+  "f": "footage/musique/trap/02.mp3",
+  "u": "https://assets.mixkit.co/music/281/281.mp3",
+  "q": "trap",
+  "titre": "Complicated"
+ },
+ {
+  "f": "footage/musique/trap/03.mp3",
+  "u": "https://assets.mixkit.co/music/262/262.mp3",
+  "q": "trap",
+  "titre": "Praise the Lord"
+ },
+ {
+  "f": "footage/musique/trap/04.mp3",
+  "u": "https://assets.mixkit.co/music/369/369.mp3",
+  "q": "trap",
+  "titre": "Need for speed"
+ },
+ {
+  "f": "footage/musique/trap/05.mp3",
+  "u": "https://assets.mixkit.co/music/267/267.mp3",
+  "q": "trap",
+  "titre": "Trap Hamza"
+ },
+ {
+  "f": "footage/musique/trap/06.mp3",
+  "u": "https://assets.mixkit.co/music/416/416.mp3",
+  "q": "trap",
+  "titre": "Young Trizzy"
+ },
+ {
+  "f": "footage/musique/trap/07.mp3",
+  "u": "https://assets.mixkit.co/music/404/404.mp3",
+  "q": "trap",
+  "titre": "Greed"
+ },
+ {
+  "f": "footage/musique/trap/08.mp3",
+  "u": "https://assets.mixkit.co/music/403/403.mp3",
+  "q": "trap",
+  "titre": "G Eazy NBA type"
+ },
+ {
+  "f": "footage/musique/trap/09.mp3",
+  "u": "https://assets.mixkit.co/music/364/364.mp3",
+  "q": "trap",
+  "titre": "Waka Floka Type"
+ },
+ {
+  "f": "footage/musique/trap/10.mp3",
+  "u": "https://assets.mixkit.co/music/318/318.mp3",
+  "q": "trap",
+  "titre": "Thunder"
+ },
+ {
+  "f": "footage/musique/deep-house/01.mp3",
+  "u": "https://assets.mixkit.co/music/744/744.mp3",
+  "q": "deep-house",
+  "titre": "House 02"
+ },
+ {
+  "f": "footage/musique/deep-house/02.mp3",
+  "u": "https://assets.mixkit.co/music/770/770.mp3",
+  "q": "deep-house",
+  "titre": "Autofahren"
+ },
+ {
+  "f": "footage/musique/cinematic/01.mp3",
+  "u": "https://assets.mixkit.co/music/614/614.mp3",
+  "q": "cinematic",
+  "titre": "Silent Descent"
+ },
+ {
+  "f": "footage/musique/cinematic/02.mp3",
+  "u": "https://assets.mixkit.co/music/871/871.mp3",
+  "q": "cinematic",
+  "titre": "Fright Night"
+ },
+ {
+  "f": "footage/musique/cinematic/03.mp3",
+  "u": "https://assets.mixkit.co/music/671/671.mp3",
+  "q": "cinematic",
+  "titre": "Piano Horror"
+ },
+ {
+  "f": "footage/musique/cinematic/04.mp3",
+  "u": "https://assets.mixkit.co/music/184/184.mp3",
+  "q": "cinematic",
+  "titre": "Vastness"
+ },
+ {
+  "f": "footage/musique/cinematic/05.mp3",
+  "u": "https://assets.mixkit.co/music/676/676.mp3",
+  "q": "cinematic",
+  "titre": "Epical Drums 01"
+ },
+ {
+  "f": "footage/musique/cinematic/06.mp3",
+  "u": "https://assets.mixkit.co/music/188/188.mp3",
+  "q": "cinematic",
+  "titre": "Echoes"
+ },
+ {
+  "f": "footage/musique/cinematic/07.mp3",
+  "u": "https://assets.mixkit.co/music/680/680.mp3",
+  "q": "cinematic",
+  "titre": "Epical Drums 05"
+ },
+ {
+  "f": "footage/musique/cinematic/08.mp3",
+  "u": "https://assets.mixkit.co/music/466/466.mp3",
+  "q": "cinematic",
+  "titre": "Games Worldbeat"
+ },
+ {
+  "f": "footage/musique/cinematic/09.mp3",
+  "u": "https://assets.mixkit.co/music/615/615.mp3",
+  "q": "cinematic",
+  "titre": "Tapis"
+ },
+ {
+  "f": "footage/musique/cinematic/10.mp3",
+  "u": "https://assets.mixkit.co/music/759/759.mp3",
+  "q": "cinematic",
+  "titre": "Romantic 05"
+ },
+ {
+  "f": "footage/musique/elegant/01.mp3",
+  "u": "https://assets.mixkit.co/music/744/744.mp3",
+  "q": "elegant",
+  "titre": "House 02"
+ },
+ {
+  "f": "footage/musique/elegant/02.mp3",
+  "u": "https://assets.mixkit.co/music/134/134.mp3",
+  "q": "elegant",
+  "titre": "Deep Techno Ambience"
+ },
+ {
+  "f": "footage/musique/elegant/03.mp3",
+  "u": "https://assets.mixkit.co/music/470/470.mp3",
+  "q": "elegant",
+  "titre": "Golden Storm"
+ },
+ {
+  "f": "footage/musique/elegant/04.mp3",
+  "u": "https://assets.mixkit.co/music/501/501.mp3",
+  "q": "elegant",
+  "titre": "Urban Grooves"
+ },
+ {
+  "f": "footage/musique/chill/01.mp3",
+  "u": "https://assets.mixkit.co/music/443/443.mp3",
+  "q": "chill",
+  "titre": "Serene View"
+ },
+ {
+  "f": "footage/musique/chill/02.mp3",
+  "u": "https://assets.mixkit.co/music/175/175.mp3",
+  "q": "chill",
+  "titre": "Digital Clouds"
+ },
+ {
+  "f": "footage/musique/chill/03.mp3",
+  "u": "https://assets.mixkit.co/music/695/695.mp3",
+  "q": "chill",
+  "titre": "Pop 05"
+ },
+ {
+  "f": "footage/musique/chill/04.mp3",
+  "u": "https://assets.mixkit.co/music/282/282.mp3",
+  "q": "chill",
+  "titre": "Sweet September"
+ },
+ {
+  "f": "footage/musique/chill/05.mp3",
+  "u": "https://assets.mixkit.co/music/135/135.mp3",
+  "q": "chill",
+  "titre": "Sleepy Cat"
+ },
+ {
+  "f": "footage/musique/chill/06.mp3",
+  "u": "https://assets.mixkit.co/music/480/480.mp3",
+  "q": "chill",
+  "titre": "Curiosity"
+ },
+ {
+  "f": "footage/musique/chill/07.mp3",
+  "u": "https://assets.mixkit.co/music/475/475.mp3",
+  "q": "chill",
+  "titre": "Majestic"
+ },
+ {
+  "f": "footage/musique/chill/08.mp3",
+  "u": "https://assets.mixkit.co/music/234/234.mp3",
+  "q": "chill",
+  "titre": "Thinking About You"
+ },
+ {
+  "f": "footage/musique/chill/09.mp3",
+  "u": "https://assets.mixkit.co/music/105/105.mp3",
+  "q": "chill",
+  "titre": "See Line Funk"
+ },
+ {
+  "f": "footage/musique/chill/10.mp3",
+  "u": "https://assets.mixkit.co/music/766/766.mp3",
+  "q": "chill",
+  "titre": "Lo-Fi 04"
  }
 ]
