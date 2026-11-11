@@ -1,0 +1,51 @@
+name: fiches
+on:
+  push:
+    branches: [main]
+    paths: [lancer.txt]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fiches:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      matrix: { shard: [0, 1, 2, 3, 4, 5] }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: echo '{}' > fiches/part.json && SHARD=${{ matrix.shard }}/6 PASSE3=1 node scripts/fiches-parfumo.mjs
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with: { name: part-${{ matrix.shard }}, path: fiches/part.json }
+  photos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: node scripts/images-bing.mjs
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with: { name: photos, path: images/images.json }
+  fusion:
+    needs: [fiches, photos]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: { path: parts }
+      - run: |
+          node -e "
+          const fs=require('fs');const f=JSON.parse(fs.readFileSync('fiches/fiches.json'));let n=0,ok=0;
+          for(const d of fs.readdirSync('parts').filter(d=>d.startsWith('part-'))){const p=JSON.parse(fs.readFileSync('parts/'+d+'/part.json'));for(const k in p){f[k]=p[k];n++;if(!p[k].nf)ok++}}
+          fs.writeFileSync('fiches/fiches.json',JSON.stringify(f));fs.writeFileSync('fiches/etat.txt','fini '+n+' traites '+ok+' trouves');
+          if(fs.existsSync('parts/photos/images.json'))fs.copyFileSync('parts/photos/images.json','images/images.json');"
+          cat fiches/etat.txt
+          git config user.name "github-actions" && git config user.email "actions@github.com"
+          git add fiches images && git commit -m "Resultat fiches et photos" && git push origin HEAD:main
