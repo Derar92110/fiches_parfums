@@ -18,15 +18,15 @@ jobs:
       - name: telecharger (hors YouTube)
         continue-on-error: true
         run: |
-          pip install -q yt-dlp
+          pip install -q yt-dlp; sudo apt-get install -y -qq ffmpeg >/dev/null
           mkdir -p officiel/videos
           node -e "JSON.parse(require('fs').readFileSync('officiel/trouve.json')).videos.filter(u=>!/youtu/i.test(u)&&!/\.(webm)$/i.test(u)).slice(0,40).forEach(u=>console.log(u))" | while read u; do
             case "$u" in
-              *.mp4*|*.mov*) curl -sL -A "Mozilla/5.0" --max-filesize 45000000 -o "officiel/videos/$(echo "$u" | md5sum | cut -c1-10).mp4" "$u" || true ;;
+              *.mp4*|*.mov*) curl -sL -w "%{http_code} %{size_download} %{content_type} $u\n" --max-filesize 45000000 -o "officiel/videos/$(echo "$u" | md5sum | cut -c1-10).mp4" "$u" | tee -a officiel/statut.txt || true ;;
               *) yt-dlp --no-playlist -f "b[height<=1920]/b" --max-filesize 45M -o "officiel/videos/%(id)s.%(ext)s" "$u" || true ;;
             esac
           done
-          find officiel/videos -size -50k -delete
+          find officiel/videos -size -50k -exec sh -c 'echo "--- $1"; head -c 300 "$1"; echo' _ {} \; | tee -a officiel/statut.txt; find officiel/videos -size -50k -delete
           for f in officiel/videos/*; do echo "$f $(ffprobe -v error -show_entries format=duration:stream=width,height -of csv=p=0 "$f" | tr '\n' ' ')"; done | tee officiel/videos/liste.txt
       - run: |
           find officiel -size +45M -delete
