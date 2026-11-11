@@ -1,0 +1,20 @@
+name: medias
+on:
+  push:
+    branches: [claude/project-thread-i21kjr]
+    paths: [medias/demande.json]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  medias:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: node scripts/medias-bing.mjs
+      - run: |
+          git config user.name "github-actions" && git config user.email "actions@github.com"
+          git add medias && git commit -m "Photos produits pour les videos" && git push origin HEAD:${GITHUB_REF_NAME}
