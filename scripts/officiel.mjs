@@ -18,6 +18,7 @@ async function page(url, depth) {
     if (u.host === base.host && d.motsLiens.some(k => u.pathname.toLowerCase().includes(k))) await page(u.href, depth - 1);
   }
 }
+for (const u of d.videosDirectes ?? []) videos.add(u);
 for (const u of d.pages) await page(u, d.profondeur ?? 1);
 fs.writeFileSync('officiel/trouve.json', JSON.stringify({pages: log, videos: [...videos]}, null, 1));
 console.log(log.join('\n')); console.log([...videos].join('\n'));
