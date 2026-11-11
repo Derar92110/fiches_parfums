@@ -1,0 +1,30 @@
+name: footage
+on:
+  push:
+    branches: [claude/project-thread-i21kjr]
+    paths: [footage/demande.json]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  footage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: node scripts/footage.mjs
+      - name: videos officielles produit
+        continue-on-error: true
+        run: |
+          pip install -q yt-dlp
+          mkdir -p footage/officiel
+          node -e "JSON.parse(require('fs').readFileSync('footage/demande.json')).youtube.forEach(q=>console.log(q))" | while read q; do
+            yt-dlp --no-playlist -f "bv*[height<=1080][ext=mp4]/b[ext=mp4]" --match-filter "duration < 120" --max-downloads 4 -o "footage/officiel/%(title).60s.%(ext)s" --write-info-json "$q" || true
+          done
+          ls -la footage/officiel
+      - run: |
+          find footage -name "*.mp4" -size +45M -delete
+          git config user.name "github-actions" && git config user.email "actions@github.com"
+          git add footage && git commit -m "Videos reelles pour le montage" && git push origin HEAD:${GITHUB_REF_NAME}
