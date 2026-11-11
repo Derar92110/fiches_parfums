@@ -1,4 +1,23 @@
 {
- "mixkit": ["perfume", "luxury", "gold", "smoke", "woman", "jewelry", "night-city", "desert", "fashion", "slow-motion"],
- "youtube": ["ytsearch4:Maison Francis Kurkdjian Baccarat Rouge 540 film", "ytsearch4:Dior Sauvage eau de parfum official film", "ytsearch4:Xerjoff Erba Pura video", "ytsearch4:Parfums de Marly Layton official video"]
+ "mixkit": [
+  "luxury-woman",
+  "perfume-bottle",
+  "red",
+  "night-club",
+  "elegant",
+  "party",
+  "hotel",
+  "glamour"
+ ],
+ "youtube": [],
+ "music": [
+  "fashion",
+  "luxury",
+  "trap",
+  "deep-house",
+  "cinematic",
+  "elegant",
+  "glamour",
+  "chill"
+ ]
 }

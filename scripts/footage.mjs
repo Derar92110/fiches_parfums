@@ -21,4 +21,18 @@ for (const q of dem.mixkit) {
   }
   if (!urls.length) fs.writeFileSync(dir + '/page.html', h.slice(0, 20000));
 }
+for (const q of (dem.music || [])) {
+  const dir = 'footage/musique/' + q; fs.mkdirSync(dir, { recursive: true });
+  let h = '';
+  try { h = await (await fetch('https://mixkit.co/free-stock-music/tag/' + q + '/', { headers: { 'User-Agent': UA } })).text(); } catch (e) { continue }
+  const urls = [...new Set([...h.matchAll(/https:\/\/assets\.mixkit\.co\/[^"'\s]+?\.mp3/g)].map(m => m[0]))];
+  const names = [...h.matchAll(/class="item-grid-card__title"[^>]*>\s*([^<]+?)\s*</g)].map(m => m[1]);
+  console.log('musique', q, urls.length);
+  let k = 0;
+  for (const u of urls.slice(0, 10)) {
+    try { const r = await fetch(u, { headers: { 'User-Agent': UA } }); if (!r.ok) continue; const b = Buffer.from(await r.arrayBuffer());
+      const f = dir + '/' + String(++k).padStart(2, '0') + '.mp3'; fs.writeFileSync(f, b); out.push({ f, u, q, titre: names[k - 1] || '' }) } catch {}
+  }
+  if (!urls.length) fs.writeFileSync(dir + '/page.html', h.slice(0, 30000));
+}
 fs.writeFileSync('footage/liste.json', JSON.stringify(out, null, 1));
