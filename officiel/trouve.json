@@ -1,6 +1,14 @@
 {
  "pages": [
-  "200 https://www.franciskurkdjian.com/int-en/baccarat-rouge-540-collection/landing-BaccaratRouge540.html (1154450)"
+  "200 https://www.franciskurkdjian.com/int-en/landing_page_baccarat-rouge-540.html (347903)"
  ],
- "videos": []
+ "videos": [
+  "https://mfk-assets.60fps.fr/br/videos/intro/mb/intro.mp4",
+  "https://mfk-assets.60fps.fr/br/videos/encounter/mb/bg.mp4",
+  "https://mfk-assets.60fps.fr/br/videos/encounter/dk/bg.mp4",
+  "https://mfk-assets.60fps.fr/br/videos/aura/dk/air.mp4",
+  "https://mfk-assets.60fps.fr/br/videos/aura/dk/fire.mp4",
+  "https://mfk-assets.60fps.fr/br/videos/aura/dk/mineral.mp4",
+  "https://mfk-assets.60fps.fr/br/videos/encounter/dk/poster.mp4"
+ ]
 }

@@ -1,2 +1,25 @@
 --- officiel/videos
 
+403 5376 text/html; charset=UTF-8 https://mfk-assets.60fps.fr/br/videos/intro/mb/intro.mp4
+403 5379 text/html; charset=UTF-8 https://mfk-assets.60fps.fr/br/videos/encounter/mb/bg.mp4
+403 5379 text/html; charset=UTF-8 https://mfk-assets.60fps.fr/br/videos/encounter/dk/bg.mp4
+403 5346 text/html; charset=UTF-8 https://mfk-assets.60fps.fr/br/videos/aura/dk/air.mp4
+403 5370 text/html; charset=UTF-8 https://mfk-assets.60fps.fr/br/videos/aura/dk/fire.mp4
+403 5379 text/html; charset=UTF-8 https://mfk-assets.60fps.fr/br/videos/aura/dk/mineral.mp4
+403 5391 text/html; charset=UTF-8 https://mfk-assets.60fps.fr/br/videos/encounter/dk/poster.mp4
+--- officiel/videos
+
+--- officiel/videos/91ff3071b4.mp4
+<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scal
+--- officiel/videos/b7e7cd2a34.mp4
+<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scal
+--- officiel/videos/688021618d.mp4
+<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scal
+--- officiel/videos/06de32d830.mp4
+<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scal
+--- officiel/videos/674fe48ea0.mp4
+<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scal
+--- officiel/videos/e45ded7f91.mp4
+<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scal
+--- officiel/videos/93a5daa143.mp4
+<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scal
