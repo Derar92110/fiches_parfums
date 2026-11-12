@@ -1,0 +1,43 @@
+name: passe4
+on:
+  push:
+    branches: [main]
+    paths: [lancer4.txt]
+permissions:
+  contents: write
+jobs:
+  fiches:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: echo '{}' > fiches/part.json && SHARD=${{ matrix.shard }}/8 node scripts/passe4.mjs
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: part-${{ matrix.shard }}
+          path: fiches/part.json
+  fusion:
+    needs: [fiches]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: parts
+      - run: |
+          node -e "
+          const fs=require('fs');const f=JSON.parse(fs.readFileSync('fiches/fiches.json'));let ok=0;
+          for(const d of fs.readdirSync('parts').filter(d=>d.startsWith('part-'))){const p=JSON.parse(fs.readFileSync('parts/'+d+'/part.json'));for(const k in p){f[k]=p[k];ok++}}
+          fs.writeFileSync('fiches/fiches.json',JSON.stringify(f));fs.writeFileSync('fiches/etat.txt','passe4 fini '+ok+' trouves');"
+          cat fiches/etat.txt
+          git config user.name "github-actions" && git config user.email "actions@github.com"
+          git add fiches && git commit -m "Resultat passe 4" && git pull --rebase origin main && git push origin HEAD:main
