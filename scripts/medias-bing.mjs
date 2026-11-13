@@ -33,7 +33,7 @@ for (const [id, qs] of Object.entries(dem)) {
       const f = String(++n).padStart(2, '0') + '.' + ext;
       fs.writeFileSync(dir + '/' + f, b); src.push({ f, q, u: x.murl, s: x.purl }); k++;
     }
-    await sleep(800);
+    await sleep(4000);
   }
   fs.writeFileSync(dir + '/sources.json', JSON.stringify(src, null, 1));
   console.log(id, n);
