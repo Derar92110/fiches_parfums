@@ -1,0 +1,40 @@
+https://www.parfumo.com/Perfumes/Trussardi/Donna
+ status 200 final https://www.parfumo.com/Perfumes/Trussardi/Donna
+ title Trussardi -  Donna 2011 Eau de Parfum » Reviews & Perfume Facts
+ og <meta property="og:image" content="https://media.parfumo.com/perfume_social/e0/e0cf7f-trussardi-donna-2011-eau-de-parfum-trussardi_1200.jpg?format=jpg&quality=90">
+ media https://media.parfumo.com/perfumes/e0/e0cf7f-trussardi-donna-2011-eau-de-parfum-trussardi_1200.jpg?width=240&aspect_ratio=1:1
+   https://media.parfumo.com/perfumes/87/87845f-trussardi-donna-2016-eau-de-toilette-trussardi_1200.jpg?width=120&aspect_ratio=1:1
+   https://media.parfumo.com/perfumes/61/61f367-fm-355-federico-mahora_1200.jpg?width=120&aspect_ratio=1:1
+   https://media.parfumo.com/perfumes/26/262caa-black-label-women-s-oliver_1200.jpg?width=120&aspect_ratio=1:1
+   https://media.parfumo.com/perfumes/ff/fffb0f-trussardi-donna-levriero-collection-limited-edition-trussardi_1200.jpg?width=120&aspect_ratio=1:1
+
+https://www.parfumo.com/Perfumes/Versace/Blue_Jeans
+ status 200 final https://www.parfumo.com/Perfumes/Versace/Blue_Jeans
+ title Blue Jeans by Versace » Reviews & Perfume Facts
+ og <meta property="og:image" content="https://media.parfumo.com/perfume_social/53/53f1cc-blue-jeans-versace_1200.jpg?format=jpg&quality=90">
+ media https://media.parfumo.com/perfumes/53/53f1cc-blue-jeans-versace_1200.jpg?width=720&aspect_ratio=1:1
+   https://media.parfumo.com/perfumes/7e/7e66a8-baby-blue-jeans-versace_1200.jpg?width=120&aspect_ratio=1:1
+   https://media.parfumo.com/perfumes/c3/c31439_the-blue-jeanz-the-dua-brand_1200.jpg?width=120&aspect_ratio=1:1
+   https://media.parfumo.com/perfumes/fb/fbeeae-sedley-parfums-de-marly_1200.jpg?width=120&aspect_ratio=1:1
+   https://media.parfumo.com/perfumes/7c/7c533c-montabaco-cuba-ormonde-jayne_1200.jpg?width=120&aspect_ratio=1:1
+
+https://www.parfumo.com/Perfumes/Hugo_Boss/Boss_Orange_Man
+ status 200 final https://www.parfumo.com/Perfumes/Hugo_Boss/boss-man-boss-orange-man-eau-de-toilette
+ title Boss Man / Boss Orange Man by Hugo Boss (Eau de Toilette) » Reviews & Perfume Facts
+ og <meta property="og:image" content="https://media.parfumo.com/perfume_social/b0/b08212-boss-man-boss-orange-man-eau-de-toilette-hugo-boss_1200.jpg?format=jpg&quality=90">
+ media https://media.parfumo.com/perfumes/b0/b08212-boss-man-boss-orange-man-eau-de-toilette-hugo-boss_1200.jpg?width=720&aspect_ratio=1:1
+   https://media.parfumo.com/perfumes/4b/4b5e3d-boss-orange-man-after-shave-lotion-hugo-boss_1200.jpg?width=120&aspect_ratio=1:1
+   https://media.parfumo.com/perfumes/4c/4c4732-the-one-for-men-eau-de-parfum-dolce-gabbana_1200.jpg?width=120&aspect_ratio=1:1
+   https://media.parfumo.com/perfumes/0b/0b4b4a-fm-55-federico-mahora_1200.jpg?width=120&aspect_ratio=1:1
+   https://media.parfumo.com/perfumes/aa/aa3e7a-chief-orange-bella-senza_1200.jpg?width=120&aspect_ratio=1:1
+
+https://www.parfumo.com/Perfumes/Afnan_Perfumes/Arabian_Gems_Blue
+ status 200 final https://www.parfumo.com/Perfumes/Afnan_Perfumes/Arabian_Gems_Blue
+ title Arabian Gems Blue by Afnan Perfumes » Reviews & Perfume Facts
+ og <meta property="og:image" content="https://media.parfumo.com/perfume_social/65/6558dc-arabian-gems-blue-afnan-perfumes_1200.jpg?format=jpg&quality=90">
+ media https://media.parfumo.com/perfumes/65/6558dc-arabian-gems-blue-afnan-perfumes_1200.jpg?width=240&aspect_ratio=1:1
+   https://media.parfumo.com/perfumes/cb/cbbcf5-turathi-blue-afnan-perfumes_1200.jpg?width=140&aspect_ratio=1:1
+   https://media.parfumo.com/perfumes/8c/8cfb97-9pm-afnan-perfumes_1200.jpg?width=140&aspect_ratio=1:1
+   https://media.parfumo.com/perfumes/0f/0f95f8-supremacy-collector-s-edition-afnan-perfumes_1200.jpg?width=140&aspect_ratio=1:1
+   https://media.parfumo.com/perfumes/e3/e3d649-supremacy-not-only-intense-afnan-perfumes_1200.jpg?width=140&aspect_ratio=1:1
+
