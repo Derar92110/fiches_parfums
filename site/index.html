@@ -491,5 +491,211 @@ window.addEventListener('resize',()=>{if(!$('#bar').hidden)document.body.style.s
 applyLang();
 </script>
 
+<!-- ANIMATIONS-MEDITERRANA (ajouté par ajouter_animations.py ; ne pas éditer dans index.html) -->
+<style>
+/* 6. Bandeau des marques + compteur */
+.xband{margin:26px 0 0;text-align:center}
+.xcnt{font-family:var(--display);font-size:clamp(34px,8vw,48px);font-weight:600;line-height:1;color:var(--gold);font-variant-numeric:tabular-nums}
+.xcnt+small{display:block;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);margin:6px 0 14px}
+.xmq{overflow:hidden;border-block:1px solid var(--gold-soft);padding:10px 0;margin-inline:calc(-1*max(16px,env(safe-area-inset-left,0px)));-webkit-mask:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.xtrack{display:flex;width:max-content;animation:xmarq 45s linear infinite}
+.xmq:hover .xtrack{animation-play-state:paused}
+.xtrack button{font-family:var(--display);font-size:24px;letter-spacing:.06em;padding:0 16px;white-space:nowrap;display:flex;align-items:center;gap:32px;background:none;border:0;color:var(--fg);cursor:pointer}
+.xtrack button:hover{color:var(--gold)}
+.xtrack button::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold-soft)}
+@keyframes xmarq{to{transform:translateX(-50%)}}
+:root[dir="rtl"] .xtrack{animation-name:xmarqr}@keyframes xmarqr{to{transform:translateX(50%)}}
+/* reflets + inclinaison des cartes */
+#feat .card .ph::before,#saison .card .ph::before,.xslot .xph::before{content:"";position:absolute;top:0;bottom:0;left:-80%;width:45%;z-index:2;background:linear-gradient(100deg,transparent,rgba(255,240,200,.75),transparent);transform:skewX(-18deg);animation:xshine 4.2s ease-in-out infinite;pointer-events:none}
+#feat .card:nth-child(4n+2) .ph::before{animation-delay:.3s}#feat .card:nth-child(4n+3) .ph::before{animation-delay:.6s}#feat .card:nth-child(4n) .ph::before{animation-delay:.9s}
+@keyframes xshine{0%,60%{left:-80%}88%,100%{left:140%}}
+#feat{perspective:900px}#feat .card{transition:transform .25s ease,box-shadow .25s ease}
+/* 2. Présentoir */
+.xst{position:relative;background:radial-gradient(ellipse at 50% 0%,#1B4664,#0F2A3F 70%);color:#F4EDE0;border-radius:6px;overflow:hidden;isolation:isolate;margin-bottom:22px;padding:24px 12px 22px;display:flex;flex-direction:column;align-items:center;perspective:1000px;touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none}
+.xspot{position:absolute;left:50%;top:-40px;width:380px;height:440px;margin-left:-190px;z-index:-1;background:radial-gradient(ellipse 45% 70% at 50% 0%,rgba(246,226,168,.22),transparent 70%);pointer-events:none}
+.xdust{position:absolute;width:3px;height:3px;border-radius:50%;background:#F6E2A8;opacity:0;animation:xdust 7s linear infinite;z-index:0;pointer-events:none}
+@keyframes xdust{0%{opacity:0;transform:none}20%{opacity:.8}100%{opacity:0;transform:translate(20px,-160px)}}
+.xring{position:relative;width:118px;height:158px;margin-top:10px;transform-style:preserve-3d}
+.xslot{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.xslot .xph{height:100%;box-shadow:0 14px 22px rgba(0,0,0,.45)}
+.xslot.front .xph{box-shadow:0 0 26px rgba(232,196,106,.55),0 14px 22px rgba(0,0,0,.45);border-color:#E8C46A}
+.xrefl{position:absolute;top:100%;left:0;right:0;height:60%;margin-top:4px;transform:scaleY(-1);opacity:.18;-webkit-mask:linear-gradient(0deg,#000,transparent 70%);mask:linear-gradient(0deg,#000,transparent 70%);pointer-events:none;overflow:hidden;border-radius:6px}
+.xrefl .xph{height:166%;box-shadow:none}
+.xplinth{width:min(460px,90%);height:26px;margin-top:40px;border-radius:50%;background:radial-gradient(ellipse,rgba(201,162,75,.5),transparent 70%)}
+.xfront{text-align:center;margin-top:6px;min-height:118px;max-width:100%}
+.xfront i{font-style:normal;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#C9A24B}
+.xfront b{display:block;font-family:var(--display);font-size:28px;font-weight:500;letter-spacing:.03em;line-height:1.15}
+.xacc{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin:8px 0}
+.xacc em{font-style:normal;font-size:12px;border:1px solid rgba(201,162,75,.55);border-radius:999px;padding:2px 10px}
+.xrow{display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap}
+.xrow .pr{font-size:24px;color:#F4EDE0}
+.xgo{font:inherit;font-size:12px;letter-spacing:.12em;text-transform:uppercase;background:#C9A24B;color:#0F2A3F;border:0;border-radius:3px;padding:10px 16px;cursor:pointer}
+.xdots{display:flex;gap:6px;justify-content:center;margin-top:14px}.xdots i{width:6px;height:6px;border-radius:3px;background:rgba(244,237,224,.25);transition:all .3s}.xdots i.on{background:#C9A24B;width:18px}
+.xhint{position:absolute;top:12px;inset-inline-end:14px;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#A9B7C2}
+/* 5. Flacon qui vole vers la réservation */
+.xfly{position:fixed;z-index:60;pointer-events:none;width:56px;height:74px;border-radius:6px;object-fit:contain;background:#FBF7EE;box-shadow:0 8px 18px rgba(0,0,0,.3);left:0;top:0}
+.xrip{position:fixed;z-index:61;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;border:2px solid var(--gold-soft);pointer-events:none;animation:xrip .7s ease-out forwards}
+@keyframes xrip{to{transform:scale(7);opacity:0}}
+.bar.xbump .tx{animation:xbump .5s cubic-bezier(.3,1.6,.5,1)}
+@keyframes xbump{40%{transform:scale(1.12)}}
+</style>
+<script>
+(function(){
+const XL={
+ fr:{hot:'Les plus demandés',ey:'Cette semaine',wk:'La sélection Méditerrana',wkp:'Trois parfums choisis par la maison cette semaine.',see:'Voir la fiche',sw:'Glissez',refs:'références disponibles',spray:'Vaporiser'},
+ en:{hot:'Most requested',ey:'This week',wk:'The Méditerrana selection',wkp:'Three perfumes picked by the house this week.',see:'View details',sw:'Swipe',refs:'products available',spray:'Spray'},
+ ar:{hot:'الأكثر طلبًا',ey:'هذا الأسبوع',wk:'مختارات ميديتيرانا',wkp:'ثلاثة عطور اختارتها الدار هذا الأسبوع.',see:'عرض التفاصيل',sw:'اسحب',refs:'منتج متوفر',spray:'رشّ'}};
+const xt=k=>(XL[lang]||XL.fr)[k]||XL.fr[k];
+const $1=s=>document.querySelector(s);
+const BADPH=new Set(["ejmXaw02gYqhL4oEJ1Me6AHaKe", "-sIB3-v7VJR2Smc7j29ftwHaEK", "6MyVxRTPQ1MSprBADBLALgAAAA", "8qV_7hZ6Jx-Z2-HcowKe4QAAAA", "BGuc6Sahoeb9CsXIqCGmjwHaH5", "F3wW1h7jU5s1VhNLKzbDSwHaH5", "GLedn-HhNyX_JYJu6XUa3QHaJQ", "PuYVb_aNyssInlgD17nlBwHaHa", "U8dHNAmqDu9AlqIS9M5QXwHaJj", "ZDml3TkKUfeM4VTjAZ_UdwHaKe", "_yj5B6YPPsTu4AvQMsPYkgHaJ3", "dwhHxtiH10pi0yPO4ijpgwHaJQ", "eOpeYKDpJZ0AaGSf0_dHhwHaLH", "jTh2DUdW3hKR1eQeQFKQ2gHaHa", "qrj57MvMg0JQ1gTVyXmxfwHaDt", "tt2xv17GJwX_12V0Ypcb4AHaJ3", "vnT4gMnbDuKMZ2Ds-jcrowHaJ4", "Qj7lPdeVSGKPdATMYWlZcgHaJQ", "qUACFT6p4AwCaZDdYPyVuwHaJQ", "fHymnXKbzgauG6YK18e09AAAAA", "KFhxcCw4720WOqZ3LV_uUwHaLI", "-5fRDNTpHvfQbH5QSpRhuwHaKd", "e2NcAvYm14x7Pqqi0ApH-wHaJ4", "YRh85Ccz1kHbDLnt4YH-RgHaNJ", "WVwMdv6_1GvXf4d-L4Kt_gHaJ4", "tdrdkp5zFs9w5Q1Rw9mt9AHaJ4", "vquDTFlRmY9MJLG9dVXduAHaK9", "YyyKoMXw2qwxdJo2HsNZlgHaJQ", "Jd-bwnV0XyFHinR4cGWM0AHaWO", "NShoxqf7DrGgLSY06nSlwwHaNK", "G3fbqc8ZihjoKFYY0sTq3AHaKs", "1HZb1YnOGzNBOwmqWsXRdwHaJ4", "wBvA9aBHQRMuawHY2qOX-wAAAA", "kVAN77_GeYKkO1M9_Vvl5wAAAA", "WcHm3gcU1MaN1ASkMHToQAHaJQ", "a7DIlOF5FoDqEaTEQiDbvAHaJe", "qH42YoZcGq0gcKCKb8XfVgHaJQ", "I4xRGOzcDMLXRpMV_cZI8AHaJ4", "fdaOa8LyJDxx31gofv8vrAAAAA", "y5b5TCj-dwMWXeRtSCFjfAHaNK", "tRyd-kmctdJw-SfJ3esgZQHaKs", "FI2T7LKAWjZx6o207KnisgAAAA", "Mm7CTd4iZkUJwi_iMY5UHAHaJz", "OTcUTk6Tmd_KwGnVyhd-MQHaLx", "UuFbkFIuwwHM1mjl1By4LgHaJQ", "xNwTSxlRFRyTGEqsFKSC-AHaJQ", "Sk233n9w0HS5GjIpQCjwiwHaJ4", "p7vbRnjXJWIYBWeijjIz8QHaJ4", "MBPaOWne-ZoTOQKwou__0wHaJ4", "l0mNepTYoye6tlvO-0SntwAAAA", "jOaW95ZIIiNtXlAqGW4waAHaJ3", "fEnKrb5p0FIwKtoCusMa5QHaN4", "qo55ZRJLLCL9fFNxMzKVVQHaOy", "cpfZ5cvt_NztZnALCiI0eQHaU0", "DOQHuLoE7xncht8N7GxfzQHaKf", "pbJlMHaMqJOP1AXzj-hvowHaLH", "NIzd2SljZSMGT_KJfTYasQHaJr", "2IAS3KIDu_08_0b7eMXe-wHaLG", "6IIOsMcTEJqztt6ndqk-iQAAAA", "_zIMJgoKbiE4mDiZ64hdKgHaE8", "Rf-BeV_ltBlVHCm5MlbqmQHaLH", "nqdTibu0OvH88pTRTjCiCgHaLH", "y-uDw9Zo6MOTkT6SzrI-JQHaEK", "NrfmvyCjemrgh6jNVpi7VAHaJl", "8HgJIHgqWAeRIlZPuC3zswHaEK", "9b6M0kuQYX77hibAcqBdFQHaJQ", "2Es3VdCX4nqwfpc6g6HbxwHaK5", "m1ZciIw8fnGpMXZdEsQQgAHaLW", "pq1vaLpc4ZItxqUCSq83nwHaKe", "SE0JIe-gmomQLXaDeu5MRQHaKB", "WxuAClcsteSzqJuq9CyJXAHaJ4", "N0lv_X9CUN717nkTYx5WVAHaKm", "GVXU_a63NUzFSpr9NSwaRAHaKf", "JXkfCDJsO13spr5TjgpvxAHaEK", "n3mQKi-ctdyBFjrEaDscygHaJ4", "50Ic5egPKx95szjbS1m_ZwHaEK", "okxiwJ-_K8Ubx1jXRKf0NQHaE7", "pVLOKlgQgzgeSwWY4dze4gHaHa", "uAVz4PuY5-j6uAHscYCqSwHaNK", "s4E8g4z6ja5P0G9WUIkk_gHaEK", "ZwpWZZ9lE-EpCBPAT1mnYwHaJr", "LGk_F4OqbPtNXo8_EaogEgHaLH", "xb04zKCfZE9MbQx_sEZ5dQHaLG", "AD_JkOK3G60REIc91x3q9AHaHa", "COU_DiiNRMtCEVUvty3IhgHaJR", "Xzku12v_y09N3FDWgkEI6AHaJ4", "VznS2X5Gr0C9JmpS3GhAkgHaEK", "gcFffn3NKe8NKB6wQ-EHOAHaE6", "ywgQoJP1mhDL5GYNJCwgxQHaBQ", "jCeKLwre2jRxezA-YHkergHaHa", "KW1BZvGRsWdTZZc75J6n8AHaLH", "Z9zTA2IuQ9iSWNFjDVSbjAHaLG", "bRg8uY68XUo5WUTlj-7WyAHaHa", "nqXyjhWa6p0HOWTAnYMpsAHaHa", "h1xUTIcfV8ii04TFWncjygAAAA", "2c3cdCQO0KcbiSj4JUEusgHaD4", "z9S2SSlRrIqH8Q4ZCRAY8wHaI9", "H6Kv_yFFV5V091I-xYPRygAAAA", "13bLiUJaKHaZsrc317oe3AHaGG", "eowRs34isnFK7Xfz7GTZowHaE8", "qNLw3O-cHknZCSLnJbyL2AHaJ4", "3vYlJpDPIwnFCP9CpiuZCgHaJl", "0KjukCBKfS_YhtOojbY6sAHaHa"]);
+const BADN=new Set(["Dolce & Gabbana | the One W", "Calvin Klein | One Shock W", "Dolce & Gabbana | Light Blue M"]);
+// une même photo trouvée pour 5 parfums différents ou plus = photo générique de la marque, souvent fausse
+{const u={};PH.forEach((p,i)=>{if(p){const n=DATA[i][0]+'|'+DATA[i][1].replace(/\b(Testeur|Tester|Vial|M|W)\b/g,'').trim();(u[p]=u[p]||new Set()).add(n)}});for(const p in u)if(u[p].size>=5)BADPH.add(p)} // photos automatiques fausses, contrôlées à l'œil le 13/11/2026
+PH.forEach((p,i)=>{if(BADPH.has(p)||BADN.has(DATA[i][0]+' | '+DATA[i][1]))PH[i]=''});
+// Parfums par nom (les numéros changent quand le tarif est reconstruit)
+const xf=(b,n)=>{let k=FEAT.find(([i])=>DATA[i]&&DATA[i][0]===b&&DATA[i][1]===n);if(k)return k[0];return DATA.findIndex(r=>r[0]===b&&r[1]===n&&r[6]==='Parfums')};
+const pick=L=>L.map(([b,n])=>xf(b,n)).filter(i=>i>=0);
+const RING=pick([['Maison Francis Kurkdjian','MFK Baccarat Rouge 540'],['Creed','Aventus M'],['Nishane','Hacivat'],['Parfums De Marly','Delina W'],['Lattafa','Khamrah'],['Tom Ford','Oud Wood'],['Initio','Side Effect'],['Xerjoff','V Erba Pura']]);
+const pimg=(i,w,h)=>{const r=DATA[i],a=IMG[i]||bimg(i,w,h),b=IMG[i]?bimg(i,w,h):'';return `<span class="xph"><img src="${a}" data-alt="${b}" alt="${esc(r[0]+' '+r[1])}" referrerpolicy="no-referrer" data-b="${esc(r[0])}" onerror="imgKo(this)"></span>`};
+const nm=i=>esc(DATA[i][1].replace(/^MFK /,'').replace(/ [MW]$/,''));
+const vis=new Set();
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting?vis.add(e.target):vis.delete(e.target)),{threshold:.3});
+
+/* ---------- 6. Compteur + bandeau des marques ---------- */
+$1('.keys').insertAdjacentHTML('afterend',`<div class="xband" id="xband"><div class="xcnt" id="xcnt">${DATA.length.toLocaleString('fr-FR')}</div><small id="xrefs"></small><div class="xmq"><div class="xtrack" id="xtrack"></div></div></div>`);
+const tb=TOPB.map(b=>`<button data-br="${esc(b)}">${esc(b)}</button>`).join('');$1('#xtrack').innerHTML=tb+tb;
+const band=$1('#xband');io.observe(band);let counted=false;
+function count(){const T=DATA.length,t0=performance.now(),el=$1('#xcnt');(function st(n){const k=Math.min(1,(n-t0)/1800),e=1-Math.pow(1-k,4);el.textContent=Math.round(T*e).toLocaleString('fr-FR');if(k<1)requestAnimationFrame(st)})(t0)}
+setInterval(()=>{if(vis.has(band)&&!counted){counted=true;count()}},300);
+
+/* ---------- 2. Présentoir ---------- */
+$1('#feat').insertAdjacentHTML('beforebegin',`<div class="xst" id="xst"><span class="xhint" id="xhint"></span><div class="xspot"></div><div id="xdusts"></div><div class="xring" id="xring"></div><div class="xplinth"></div><div class="xfront" id="xfront"></div><div class="xdots" id="xdots"></div></div>`);
+const st=$1('#xst'),ring=$1('#xring'),N=RING.length;
+ring.innerHTML=RING.map(i=>`<div class="xslot">${pimg(i,240,320)}<div class="xrefl">${pimg(i,240,320)}</div></div>`).join('');
+$1('#xdots').innerHTML=RING.map(()=>'<i></i>').join('');
+$1('#xdusts').innerHTML=Array.from({length:26},()=>`<span class="xdust" style="left:${Math.random()*100}%;top:${25+Math.random()*70}%;animation-delay:${-Math.random()*7}s;animation-duration:${5+Math.random()*5}s"></span>`).join('');
+let ang=0,vel=.16,drag=null,R=220,front=-1;
+function lay(){R=Math.min(250,Math.max(150,st.clientWidth*.34));[...ring.children].forEach((el,i)=>el.style.transform=`rotateY(${i*360/N}deg) translateZ(${R}px)`)}
+function drawFront(){const i=RING[front],f=hasF(i)?FL[FK[i]]:null,acc=f&&f[4]?f[4].slice(0,3):[];
+ $1('#xfront').innerHTML=`<i>${esc(tt(DATA[i][0]))}</i><b>${nm(i)}</b><div class="xacc">${acc.map(a=>`<em>${esc(ta(a))}</em>`).join('')}</div><div class="xrow"><span class="pr">${eur(DATA[i][4])}</span><button class="xgo" data-f="${i}">${xt('see')}</button></div>`}
+function frame(){
+ if(!drag){ang-=vel;vel+=(.16-vel)*.02}
+ ring.style.transform=`translateZ(${-R}px) rotateY(${ang}deg)`;
+ const f=((Math.round(-ang/(360/N))%N)+N)%N;
+ if(f!==front){front=f;drawFront();[...$1('#xdots').children].forEach((d,k)=>d.classList.toggle('on',k===f));[...ring.children].forEach((el,k)=>el.classList.toggle('front',k===f))}
+ [...ring.children].forEach((el,i)=>{const d=Math.abs(((i*360/N+ang)%360+540)%360-180);el.style.opacity=(.3+.7*(d/180)).toFixed(2)});
+ requestAnimationFrame(frame)}
+st.addEventListener('pointerdown',e=>{if(e.target.closest('button'))return;drag={x:e.clientX,a:ang,lx:e.clientX};st.setPointerCapture(e.pointerId);st.style.cursor='grabbing'});
+st.addEventListener('pointermove',e=>{if(!drag)return;ang=drag.a+(e.clientX-drag.x)*.4;vel=-(e.clientX-drag.lx)*.4;drag.lx=e.clientX});
+const end=()=>{drag=null;st.style.cursor=''};st.addEventListener('pointerup',end);st.addEventListener('pointercancel',end);
+lay();addEventListener('resize',lay);requestAnimationFrame(frame);
+
+/* reflets : inclinaison des cartes à la souris */
+$1('#feat').addEventListener('pointermove',e=>{if(e.pointerType!=='mouse')return;const c=e.target.closest('.card');if(!c)return;const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`rotateY(${x*10}deg) rotateX(${-y*10}deg) translateY(-4px)`;c.style.boxShadow='0 16px 30px rgba(15,42,63,.18)'});
+$1('#feat').addEventListener('pointerout',e=>{const c=e.target.closest('.card');if(c&&!c.contains(e.relatedTarget)){c.style.transform='';c.style.boxShadow=''}});
+
+/* ---------- 5. Flacon qui vole vers la réservation ---------- */
+document.addEventListener('click',e=>{const b=e.target.closest('[data-p]');if(!b)return;
+ const rip=document.createElement('span');rip.className='xrip';rip.style.left=e.clientX+'px';rip.style.top=e.clientY+'px';document.body.appendChild(rip);setTimeout(()=>rip.remove(),700);
+ const holder=b.closest('.card,.item,.fh,.line');if(!holder||holder.classList.contains('line'))return;
+ const im=holder.querySelector('.ph img,.th');const src=im&&im.currentSrc;
+ const r0=(im||b).getBoundingClientRect();
+ requestAnimationFrame(()=>requestAnimationFrame(()=>{
+  const bar=$1('#bar');if(bar.hidden)return;const t=$1('#bn').getBoundingClientRect();
+  const fl=document.createElement(src?'img':'span');fl.className='xfly';if(src){fl.src=src;fl.referrerPolicy='no-referrer'}else{fl.style.background='#C9A24B';fl.style.borderRadius='50%';fl.style.width=fl.style.height='22px'}
+  document.body.appendChild(fl);
+  const x0=r0.left+r0.width/2-28,y0=r0.top+r0.height/2-37,x1=t.left+t.width/2-28,y1=t.top-30,t0=performance.now(),D=800;
+  (function st2(n){const k=Math.min(1,(n-t0)/D),q=k<.5?2*k*k:1-Math.pow(-2*k+2,2)/2;
+   fl.style.transform=`translate(${x0+(x1-x0)*q}px,${y0+(y1-y0)*q-Math.sin(Math.PI*q)*140}px) scale(${1-.6*q}) rotate(${q*18}deg)`;fl.style.opacity=k>.9?(1-k)*10:1;
+   if(k<1)requestAnimationFrame(st2);else{fl.remove();bar.classList.remove('xbump');void bar.offsetWidth;bar.classList.add('xbump')}})(t0)}))},true);
+
+/* Langue et devise */
+function texts(){$1('#xhint').textContent=xt('sw');$1('#xrefs').textContent=xt('refs');if(front>=0)drawFront()}
+window._xtexts=texts;
+document.querySelectorAll('.lang button,[data-c]').forEach(b=>b.addEventListener('click',()=>setTimeout(texts,0)));
+texts();
+})();
+</script>
+<style>
+/* Recherche directe depuis l'accueil */
+#accueil.hero{overflow:visible;z-index:6}
+.xsearch{position:relative;z-index:7;max-width:560px;margin:0 auto 22px;text-align:start}
+.xsearch form{display:flex;background:#FBF7EE;border:1px solid #C9A24B;border-radius:4px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.xsearch input{flex:1;min-width:0;font:inherit;font-size:16px;border:0;background:transparent;color:#0F2A3F;padding:14px 16px;outline:none}
+.xsearch input::placeholder{color:#5C6B77}
+.xsearch form:focus-within{box-shadow:0 0 0 3px rgba(201,162,75,.45),0 10px 30px rgba(0,0,0,.25)}
+.xsearch button[type=submit]{font:inherit;font-size:13px;letter-spacing:.12em;text-transform:uppercase;background:#C9A24B;color:#0F2A3F;border:0;padding:0 18px;cursor:pointer;font-weight:500}
+.xsug{position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:20;background:#FBF7EE;border:1px solid rgba(15,42,63,.16);border-radius:4px;box-shadow:0 14px 34px rgba(0,0,0,.3);overflow:hidden;color:#0F2A3F}
+.xsug button{display:grid;grid-template-columns:40px minmax(0,1fr) auto;gap:10px;align-items:center;width:100%;font:inherit;text-align:start;background:none;border:0;border-bottom:1px dotted rgba(15,42,63,.16);padding:8px 12px;cursor:pointer;color:inherit}
+.xsug button:hover,.xsug button:focus{background:#F1E7D3;outline:none}
+.xsug .xthw{width:40px;height:50px;border-radius:4px;background:radial-gradient(120% 90% at 50% 40%,#FFFDF8,#EFE4CC);display:flex;isolation:isolate;overflow:hidden}
+.xsug .fb{width:60%;font-size:14px;border-width:1px}
+.xsug .xth{width:100%;height:100%;object-fit:cover;mix-blend-mode:multiply}
+.xsug b{display:block;font-weight:500;overflow-wrap:anywhere;font-size:14px}
+.xsug i{font-style:normal;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A1F}
+.xsug .pr{font-size:18px;color:#0F2A3F}
+.xsug .all{display:block;text-align:center;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#8A6A1F;border-bottom:0;padding:11px}
+/* Sélection de saison */
+#saison .grid{margin-top:4px}
+</style>
+<script>
+(function(){
+const $1=s=>document.querySelector(s);
+const XM={
+ fr:{welcome:'Bienvenue',q:'Vous êtes',pro:'Une boutique',pros:'Revendeur ou grossiste : tarifs professionnels, dès 5 pièces',part:'Un particulier',parts:'Pour vous ou pour offrir : prix public, dès 1 pièce',mpro:'Espace boutiques',mpart:'Espace particuliers',chg:'Changer',
+  ey:'Sélection de la semaine',upd:'Mise à jour chaque lundi',today:'aujourd’hui',
+  S:{hiver:['Parfums d’hiver','Pour le froid : ambrés, épicés, boisés, qui tiennent toute la journée.'],printemps:['Parfums de printemps','Floraux, verts et fruités pour les beaux jours qui reviennent.'],ete:['Parfums d’été','Frais, hespéridés et aquatiques pour la chaleur.'],automne:['Parfums d’automne','Boisés, épicés et cuirés pour la rentrée.']}},
+ en:{welcome:'Welcome',q:'You are',pro:'A shop',pros:'Retailer or wholesaler: trade prices, from 5 pieces',part:'A private customer',parts:'For you or as a gift: retail price, from 1 piece',mpro:'Shop area',mpart:'Private customers',chg:'Change',
+  ey:'This week’s selection',upd:'Updated every Monday',today:'today',
+  S:{hiver:['Winter fragrances','For the cold: amber, spicy and woody scents that last all day.'],printemps:['Spring fragrances','Floral, green and fruity scents for sunny days.'],ete:['Summer fragrances','Fresh, citrus and aquatic scents for the heat.'],automne:['Autumn fragrances','Woody, spicy and leathery scents.']}},
+ ar:{welcome:'مرحبًا',q:'أنت',pro:'محل تجاري',pros:'تاجر تجزئة أو جملة: أسعار المحترفين، ابتداءً من 5 قطع',part:'زبون خاص',parts:'لك أو كهدية: السعر العام، ابتداءً من قطعة واحدة',mpro:'فضاء المحلات',mpart:'فضاء الزبائن',chg:'تغيير',
+  ey:'مختارات الأسبوع',upd:'تُحدَّث كل يوم اثنين',today:'اليوم',
+  S:{hiver:['عطور الشتاء','للبرد: عطور عنبرية وحارة وخشبية تدوم طوال اليوم.'],printemps:['عطور الربيع','عطور زهرية وخضراء وفاكهية للأيام المشمسة.'],ete:['عطور الصيف','عطور منعشة وحمضية ومائية للحر.'],automne:['عطور الخريف','عطور خشبية وحارة وجلدية.']}}};
+const xm=k=>(XM[lang]||XM.fr)[k];
+/* ---------- Sélection de saison (change chaque lundi) ---------- */
+const W={hiver:{Oriental:3,Spicy:3,Oud:3,Gourmand:2,Sweet:2,Resinous:2,Leathery:2,Smoky:2,Woody:1,Powdery:1,Creamy:1,Animal:1,Aquatic:-3,Citrus:-2,Fresh:-2,Green:-1},
+ printemps:{Floral:3,Green:2,Fruity:2,Fresh:2,Powdery:1,Musky:1,Citrus:1,Oud:-2,Smoky:-2,Leathery:-1},
+ ete:{Citrus:3,Fresh:3,Aquatic:3,Green:2,Aromatic:2,Fruity:1,Musky:1,Gourmand:-2,Oud:-3,Oriental:-2,Smoky:-2,Resinous:-2},
+ automne:{Woody:3,Spicy:2,Leathery:2,Chypre:2,Earthy:2,Fruity:1,Aromatic:1,Smoky:1,Aquatic:-2,Citrus:-1}};
+const now=new Date(),mo=now.getMonth()+1;
+const season=[11,12,1,2].includes(mo)?'hiver':[3,4].includes(mo)?'printemps':[5,6,7,8].includes(mo)?'ete':'automne';
+const mon=new Date(now);mon.setHours(0,0,0,0);mon.setDate(mon.getDate()-((mon.getDay()+6)%7));
+let seed=Math.floor(mon.getTime()/864e5);const rnd=()=>{seed=(seed*16807)%2147483647;return seed/2147483647};
+const seen=new Set(),pool=[];
+const PHOK=new Set(["Al Haramain | Amber Oud", "Amouage | Jubilation Xxv (M)", "Amouage | Reflection", "Arabiyat | Prestige Marwa", "Azzaro | Chrome", "Bentley | Absolute M", "Bentley | M", "Bvlgari | Aqva PH", "Bvlgari | Man in Black", "Byredo | Bal d’Afrique", "Byredo | Mojave Ghost", "Byredo | Oud Immortel", "Calvin Klein | Eternity M", "Calvin Klein | One", "Calvin Klein | One Shock M", "Cartier | Baiser Vole", "Chanel | Antaeus M", "Chanel | Bleu De Chanel PH", "Chanel | Bleu De Chanel PH Parfum", "Chanel | Chance", "Chanel | Coco Chanel", "Chanel | Coco Mademoiselle", "Chanel | Coco Mademoiselle 3x Purse", "Chloé | Nomade", "Christian Dior | Dior Fahrenheit", "Christian Dior | Dior J'adore", "Christian Dior | Dior J'adore Intense Parfum", "Christian Dior | Dior Poison W", "Christian Dior | Dior Sauvage Elixir", "Christian Dior | Fahrenheit", "Creed | Millesime Imperial", "Creed | Silver Mountain Water", "Davidoff | Cool Water M", "Davidoff | Cool Water M Parfum", "Davidoff | Cool Water W", "Davidoff | Cool Water Woman Sea Rose", "Davidoff | Zino", "Diptyque | Do Son", "Dolce & Gabbana | Light Blue W", "Dolce & Gabbana | Pour Homme", "Dolce & Gabbana | the One M", "Elizabeth Arden | EA.Green Tea Scent Ep", "Elizabeth Arden | Sunflowers", "Ex Nihilo | Fleur Narcotique", "Frederic Malle | Musc Ravageur", "Giorgio Armani | Acqua Di Gio", "Giorgio Armani | Acqua Di Gio M", "Giorgio Armani | Acqua Di Gio M Elixir", "Giorgio Armani | Acqua Di Gio M Intense", "Giorgio Armani | Acqua Di Gio Profondo M", "Giorgio Armani | Acqua Di Gio Profondo M Parfum Refillable", "Giorgio Armani | Acqua Di Gio Rechargeable", "Giorgio Armani | Stronger With You", "Giorgio Armani | Stronger With You Intensely", "Giorgio Armani | Stronger With You Sandal Wood", "Givenchy | Gentleman Originale", "Gucci | Guilty Absolute Pour Homme", "Guerlain | L'Instant De Guerlain", "Guerlain | Shalimar Refill", "Hermès | Equipage", "Hermès | Le Jardin De Monsieur Li", "Hermès | Terre D'Hermes", "Hermès | Terre D'hermes", "Hermès | Terre D'hermes Parfum", "Hermès | Un Jardin Sur Le Toit", "Hermès | Un Jardin Sur Le Toit (D)", "Initio | Oud for Greatness", "Initio | Side Effect", "Issey Miyake | Nuit D'Issey Pour Homme", "Jean Paul Gaultier | Le Male", "Jean Paul Gaultier | Le Male Elixir Parfum", "Kilian | Angel's Share", "Kilian | Intoxicated", "Kilian | Straight to Heaven White Cristal", "Lalique | Encre Noire A L'Extreme", "Lalique | Lalique de Lalique", "Lattafa | Khamrah", "Lattafa | Maahir Legacy", "Lattafa | Pride Art of Arabia 1", "Maison Crivelli | Oud Maracuja", "Mancera | Red Tobacco", "Marc Antoine Barrois | Encelade", "Marc Jacobs | Daisy", "Marc-Antoine Barrois | Ganymede", "Matiere Premiere | Falcon Leather", "Memo | African Leather", "Memo | Eau de Memo", "Missoni | Wave", "Montale Paris | Montale Arabian Tonka", "Montblanc | Legend M", "Montblanc | Legend Spirit M", "Nasomatto | Black Afgano EXP", "Nautica | Voyage M", "Nishane | Hacivat", "Nishane | Wulong Cha EXP", "Orto Parisi | Terroni", "Parfums De Marly | Delina La Rosee W", "Parfums De Marly | Delina W", "Parfums De Marly | Godolphin", "Parfums De Marly | Greenley M", "Parfums De Marly | Haltane M", "Parfums De Marly | Herod", "Parfums De Marly | Herod M", "Parfums De Marly | Kalan M", "Parfums De Marly | Layton", "Parfums De Marly | Layton Exclusif", "Parfums De Marly | Sedley", "Parfums De Marly | Valaya W", "Rasasi | La Yuqawam Ambergris Showers PH", "Rasasi | La Yuqawam Jasmin Wisp Pour Femme", "Rasasi | La Yuqawam Orchid Prairie Pour Femme", "Rasasi | La Yuqawam Tobacco Blaze PH", "Roja Parfums | A Midsummer Dream", "Roja Parfums | Elysium Eau Intense Pour Homme", "Roja Parfums | Oceania", "Sospiro | Vibrato", "Swiss Arabian | Shaghaf M", "Swiss Arabian | Shaghaf Oud", "Swiss Arabian | Shaghaf W", "Tom Ford | Costa Azzurra Parfum", "Tom Ford | Fabulous", "Tom Ford | Neroli Portofino", "Tom Ford | Neroli Portofino Parfum", "Tom Ford | Noir Extreme M", "Tom Ford | Noir Extreme M Parfum", "Tom Ford | Ombre Leather", "Tom Ford | Ombre' Leather", "Tom Ford | Ombre' Leather Parfum", "Tom Ford | Oud Wood", "Tom Ford | Tuscan Leather", "Tommy Hilfiger | Tommy Girl", "Versace | Bright Crystal W", "Versace | Dylan Blue PH", "Versace | Eau Fraiche Extreme PH", "Versace | Eau Fraiche M", "Versace | Man Eau Fraiche", "Viktor & Rolf | Spicebomb Extreme PH", "Xerjoff | 1861 Renaissance", "Xerjoff | Alexandria Ii", "Xerjoff | Blend Tony Iommi Monkey Special Parfum", "Xerjoff | Blends Tony Iommi Monkey Special", "Xerjoff | Coffee Break Golden Dallah Parfum", "Xerjoff | Oud Stars Alexandria II Parfum", "Xerjoff | Tony Iommi Monkey Special", "Xerjoff | V Accento", "Xerjoff | V Accento Overdose", "Xerjoff | V Opera", "Xerjoff | Vibe Accento", "Yves Saint Laurent | Babycat", "État Libre d’Orange | You Or Someone Like You"]); // photos vérifiées à l'œil (13/11/2026) : seules celles-ci peuvent entrer dans la sélection
+DATA.forEach((r,i)=>{if(r[6]!=='Parfums'||!hasF(i)||seen.has(FK[i])||!(IMG[i]||PH[i]))return;const f=FL[FK[i]],nv=f[8]||0,acc=f[4]||[];if(nv<300||!acc.length)return;
+ let sc=0;acc.slice(0,5).forEach((a,k)=>sc+=(W[season][a]||0)*[1,.8,.6,.4,.3][k]);if(sc<2.5)return;seen.add(FK[i]);pool.push({i,s:sc*Math.log10(nv),b:r[0]})});
+pool.sort((a,b)=>b.s-a.s);const top=pool.slice(0,48);for(let k=top.length-1;k>0;k--){const j=Math.floor(rnd()*(k+1));[top[k],top[j]]=[top[j],top[k]]}
+const SEL=[],nb={};for(const p of top){if((nb[p.b]||0)>=2)continue;nb[p.b]=(nb[p.b]||0)+1;SEL.push(p.i);if(SEL.length===8)break}
+$1('#selection').insertAdjacentHTML('beforebegin',`<section class="sec" id="saison"><div class="sh"><p class="ey" id="xsey"></p><h2 id="xsh"></h2><p id="xsp"></p></div><div class="grid" id="xsgrid"></div></section>`);
+function drawSaison(){const S=xm('S')[season];$1('#xsey').textContent=xm('ey');$1('#xsh').textContent=S[0];$1('#xsp').textContent=S[1]+' '+xm('upd')+'.';
+ $1('#xsgrid').innerHTML=SEL.map(i=>{const r=DATA[i];return `<article class="card"><div class="ph" data-f="${i}"><img src="${IMG[i]||bimg(i,300,400)}" data-alt="${IMG[i]?bimg(i,300,400):''}" alt="${esc(r[0]+' '+r[1])}" loading="lazy" referrerpolicy="no-referrer" data-b="${esc(r[0])}" onerror="imgKo(this)"></div><div class="cb"><span class="bn">${esc(tt(r[0]))}</span><span class="pn" data-f="${i}" style="cursor:pointer">${esc(r[1])}</span><button class="more" data-f="${i}">${tr('det')}</button><span class="ps"><bdi dir="auto">${esc([tt(r[2]),r[5]].filter(Boolean).join(' · '))}</bdi></span><div class="pf"><span class="pr">${eur(r[4])}</span><div class="act" data-a="${i}">${actHTML(i)}</div></div></div></article>`}).join('');}
+const _rf=renderFeat;renderFeat=function(){_rf();drawSaison();if(window._xtexts)window._xtexts()};
+drawSaison();
+
+/* ---------- Recherche directe dans le catalogue ---------- */
+const XS={fr:{ph:'Chercher un parfum ou une marque',go:'Chercher',all:'Voir les {n} résultats dans le catalogue',none:'Aucun parfum trouvé'},en:{ph:'Search a fragrance or a brand',go:'Search',all:'See all {n} results in the catalogue',none:'No fragrance found'},ar:{ph:'ابحث عن عطر أو علامة',go:'بحث',all:'عرض {n} نتيجة في الكتالوج',none:'لم يتم العثور على عطر'}};
+const xs=k=>(XS[lang]||XS.fr)[k];
+$1('#accueil .btns').insertAdjacentHTML('beforebegin','<div class="xsearch"><form id="xsf" role="search"><input id="xsq" type="search" autocomplete="off" enterkeyhint="search"><button type="submit" id="xsgo"></button></form><div class="xsug" id="xsug" hidden></div></div>');
+const norm=t=>t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+const IDX=DATA.map(r=>norm(r[0]+' '+r[1]+' '+r[2]));
+function hits(q){const w=norm(q).split(/\s+/).filter(Boolean);if(!w.length)return[];const out=[];IDX.forEach((t,i)=>{if(w.every(x=>t.includes(x)))out.push(i)});return out}
+function sug(){const q=$1('#xsq').value.trim(),box=$1('#xsug');if(q.length<2){box.hidden=true;return}
+ const H=hits(q);if(!H.length){box.innerHTML=`<button type="button" class="all" disabled>${xs('none')}</button>`;box.hidden=false;return}
+ H.sort((a,b)=>(DATA[a][6]==='Parfums'?0:1)-(DATA[b][6]==='Parfums'?0:1));
+ box.innerHTML=H.slice(0,6).map(i=>{const r=DATA[i],su=IMG[i]||bimg(i,80,100);return `<button type="button" data-f="${i}"><span class="xthw">${su?`<img class="xth" src="${su}" alt="" referrerpolicy="no-referrer" onerror="imgKo(this)">`:''}</span><span><i>${esc(tt(r[0]))}</i><b>${esc(r[1])}</b></span><span class="pr">${eur(r[4])}</span></button>`}).join('')+`<button type="button" class="all" id="xsall">${xs('all').replace('{n}',H.length)}</button>`;box.hidden=false}
+function goCat(){const q=$1('#xsq').value.trim();$1('#xsug').hidden=true;$1('#q').value=q;$1('#b').value='';$1('#c').value='';$1('#q').dispatchEvent(new Event('input'));document.getElementById('catalogue').scrollIntoView({behavior:'smooth'})}
+$1('#xsq').addEventListener('input',sug);
+$1('#xsf').addEventListener('submit',e=>{e.preventDefault();$1('#xsq').blur();goCat()});
+$1('#xsug').addEventListener('click',e=>{if(e.target.closest('#xsall'))goCat();else if(e.target.closest('[data-f]'))$1('#xsug').hidden=true});
+document.addEventListener('click',e=>{if(!e.target.closest('.xsearch'))$1('#xsug').hidden=true});
+function xsTexts(){$1('#xsq').placeholder=xs('ph');$1('#xsgo').textContent=xs('go');if(!$1('#xsug').hidden)sug()}
+document.querySelectorAll('.lang button,[data-c]').forEach(b=>b.addEventListener('click',()=>setTimeout(xsTexts,0)));
+xsTexts();
+render();
+})();
+</script>
+<!-- /ANIMATIONS-MEDITERRANA -->
+
 </body>
 </html>
