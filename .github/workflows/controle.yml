@@ -1,0 +1,16 @@
+name: controle-photos
+on:
+  push:
+    branches: [claude/project-thread-1nna1e]
+    paths: [controle/liste.json]
+permissions:
+  contents: write
+jobs:
+  planches:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install pillow && python3 controle/planches.py
+      - run: |
+          git config user.name "github-actions" && git config user.email "actions@github.com"
+          git add controle/*.jpg && git commit -m "Planches de controle des photos" && git push
