@@ -612,24 +612,6 @@ texts();
 })();
 </script>
 <style>
-/* Écran d'entrée : boutique ou particulier */
-.xgate{position:fixed;inset:0;z-index:80;background:radial-gradient(120% 90% at 50% 0%,#1B4664 0%,#0F2A3F 62%);color:#F4EDE0;display:flex;align-items:center;justify-content:center;overflow:auto;padding:calc(24px + env(safe-area-inset-top,0px)) max(18px,env(safe-area-inset-right,0px)) calc(24px + env(safe-area-inset-bottom,0px)) max(18px,env(safe-area-inset-left,0px))}
-.xgin{width:min(640px,100%);text-align:center}
-.xgin .emb{width:72px;margin:0 auto 12px}
-.xgin h2{font-family:var(--display);font-weight:500;font-size:clamp(28px,7vw,42px);letter-spacing:.1em;margin:0}
-.xgin .q{font-size:12px;letter-spacing:.35em;text-transform:uppercase;color:#C9A24B;margin:22px 0 14px}
-.xgch{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.xgch button{font:inherit;color:#F4EDE0;background:rgba(244,237,224,.05);border:1px solid rgba(201,162,75,.6);border-radius:6px;padding:22px 14px;cursor:pointer;text-align:center;display:flex;flex-direction:column;gap:6px;align-items:center;transition:background .2s,transform .2s}
-.xgch button:hover{background:rgba(201,162,75,.16);transform:translateY(-2px)}
-.xgch svg{width:34px;height:34px}
-.xgch b{font-family:var(--display);font-size:24px;font-weight:600;line-height:1.1}
-.xgch span{font-size:13px;color:#C8D3DB}
-.xglang{display:flex;gap:6px;justify-content:center;margin-top:22px}
-.xglang button{font:inherit;font-size:13px;background:none;border:1px solid rgba(244,237,224,.35);color:#F4EDE0;border-radius:3px;padding:6px 12px;cursor:pointer}
-.xglang button[aria-pressed="true"]{border-color:#C9A24B;color:#C9A24B}
-@media (max-width:480px){.xgch{grid-template-columns:1fr}}
-.xmode{display:inline-flex;gap:8px;align-items:center;font:inherit;font-size:11px;letter-spacing:.18em;text-transform:uppercase;background:rgba(244,237,224,.08);border:1px solid rgba(201,162,75,.5);color:#F4EDE0;border-radius:999px;padding:6px 14px;margin-bottom:18px;cursor:pointer}
-.xmode u{text-decoration:none;color:#C9A24B}
 /* Sélection de saison */
 .xmeteo{display:inline-flex;gap:8px;align-items:center;margin-top:10px;font-size:13px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:5px 14px;background:var(--surface)}
 .xmeteo b{color:var(--fg);font-weight:500}
@@ -637,7 +619,6 @@ texts();
 </style>
 <script>
 (function(){
-const COEF=1.4; // prix particulier = prix boutique x COEF (arrondi à l'euro)
 const $1=s=>document.querySelector(s);
 const XM={
  fr:{welcome:'Bienvenue',q:'Vous êtes',pro:'Une boutique',pros:'Revendeur ou grossiste : tarifs professionnels, dès 5 pièces',part:'Un particulier',parts:'Pour vous ou pour offrir : prix public, dès 1 pièce',mpro:'Espace boutiques',mpart:'Espace particuliers',chg:'Changer',
@@ -650,36 +631,6 @@ const XM={
   ey:'مختارات الأسبوع',upd:'تُحدَّث كل يوم اثنين',today:'اليوم',
   S:{hiver:['عطور الشتاء','للبرد: عطور عنبرية وحارة وخشبية تدوم طوال اليوم.'],printemps:['عطور الربيع','عطور زهرية وخضراء وفاكهية للأيام المشمسة.'],ete:['عطور الصيف','عطور منعشة وحمضية ومائية للحر.'],automne:['عطور الخريف','عطور خشبية وحارة وجلدية.']}}};
 const xm=k=>(XM[lang]||XM.fr)[k];
-// Textes du site remplacés en mode particulier
-const PART={
- fr:{lead:'Parfums de niche et grandes maisons, livrés chez vous en Algérie',sub2:'Plus de 5 000 parfums. Vous réservez sans payer, nous confirmons le stock, puis nous vous livrons.',k2:'Dès 1 pièce',k2s:'Un seul flacon ou plusieurs',h1p:'Ajoutez les parfums qui vous plaisent, dès une seule pièce.',note:'Aucun paiement maintenant. Nous vérifions le stock et vous confirmons par écrit les articles disponibles, le total, la livraison et les modalités de paiement.',f2:'Adresse',t3:'<b>Prix</b> en €',t3d:'<b>Prix</b> en DA (1 € = 270 DA, indicatif)',selp:'Les parfums les plus demandés, choisis par la maison.',foot:'Maison Méditerrana · Parfums · Prix au 20/10/2026',ok:'Prêt à envoyer',okm:'Remplissez vos coordonnées pour envoyer.',cpno:'Complétez vos coordonnées avant de copier.'},
- en:{lead:'Niche and designer fragrances, delivered to your door in Algeria',sub2:'Over 5,000 fragrances. Reserve without paying, we confirm the stock, then we deliver to you.',k2:'From 1 piece',k2s:'One bottle or several',h1p:'Add the fragrances you like, from a single piece.',note:'No payment now. We check the stock and confirm in writing the available items, the total, delivery and payment terms.',f2:'Address',t3:'<b>Prices</b> in €',t3d:'<b>Prices</b> in DZD (1 € = 270 DA, indicative)',selp:'The most requested fragrances, chosen by the house.',foot:'Maison Méditerrana · Fragrances · Prices as of 20/10/2026',ok:'Ready to send',okm:'Fill in your details to send.',cpno:'Fill in your details before copying.'},
- ar:{lead:'عطور نيش ودور عالمية، توصيل إلى بابك في الجزائر',sub2:'أكثر من 5000 عطر. احجز دون دفع، نؤكد المخزون، ثم نوصل إليك.',k2:'ابتداءً من قطعة واحدة',k2s:'قارورة واحدة أو أكثر',h1p:'أضف العطور التي تعجبك، ابتداءً من قطعة واحدة.',note:'لا دفع الآن. نتحقق من المخزون ونؤكد لك كتابيًا المنتجات المتوفرة والمجموع والتوصيل وشروط الدفع.',f2:'العنوان',t3:'<b>الأسعار</b> باليورو',t3d:'<b>الأسعار</b> بالدينار الجزائري (1 يورو = 270 دج، للاسترشاد)',selp:'العطور الأكثر طلبًا، اختارتها الدار.',foot:'Maison Méditerrana · عطور · الأسعار بتاريخ 20/10/2026',ok:'جاهز للإرسال',okm:'أدخل بياناتك للإرسال.',cpno:'أكمل بياناتك قبل النسخ.'}};
-const ORIG={};for(const lg in PART){ORIG[lg]={};for(const k in PART[lg])ORIG[lg][k]=L[lg]&&L[lg][k]}
-const PRO=DATA.map(r=>r[4]),MIN0=CFG.min,REF0=CFG.ref;
-let mode=null;
-try{const q=location.search;if(/particulier/i.test(q))mode='part';else if(/pro|boutique/i.test(q))mode='pro';else mode=localStorage.getItem('med_mode')}catch(e){}
-function setMode(m,keep){mode=m;try{localStorage.setItem('med_mode',m)}catch(e){}
- const part=m==='part';
- DATA.forEach((r,i)=>r[4]=part?Math.round(PRO[i]*COEF):PRO[i]);
- CFG.min=part?1:MIN0;CFG.ref=part?REF0+'P':REF0;
- for(const lg in PART)for(const k in PART[lg])if(L[lg])L[lg][k]=part?PART[lg][k]:ORIG[lg][k];
- document.body.classList.toggle('xpart',part);
- applyLang();modeBtn();}
-const _ot=orderText;orderText=function(){let s=_ot();if(mode==='part'){s=s.replace('Maison Méditerrana\n','Maison Méditerrana\nClient particulier\n').replace('Boutique : ','Adresse : ').replace(/ € HT \(hors taxes d’importation\)/,' €')}return s};
-// bouton dans l'accueil
-$1('#accueil').insertAdjacentHTML('afterbegin','<button class="xmode" id="xmode"></button>');
-function modeBtn(){$1('#xmode').innerHTML=`${mode==='part'?xm('mpart'):xm('mpro')} · <u>${xm('chg')}</u>`}
-$1('#xmode').addEventListener('click',gate);
-// écran d'entrée
-const ICS={pro:'<svg viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="1.5"><path d="M3 9l1.5-5h15L21 9M3 9h18M3 9v11h18V9M9 20v-6h6v6"/></svg>',part:'<svg viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="1.5"><rect x="7" y="9" width="10" height="12" rx="2"/><path d="M10 9V6h4v3M11 3h2v3h-2z"/></svg>'};
-function gate(){let g=$1('#xgate');if(!g){document.body.insertAdjacentHTML('beforeend','<div class="xgate" id="xgate" role="dialog" aria-modal="true"></div>');g=$1('#xgate')}
- const emb=$1('.hero .emb').outerHTML;
- g.innerHTML=`<div class="xgin">${emb}<p class="mai" style="color:#C9A24B">Maison</p><h2>MÉDITERRANA</h2><p class="q">${xm('q')}</p><div class="xgch"><button data-xm="pro">${ICS.pro}<b>${xm('pro')}</b><span>${xm('pros')}</span></button><button data-xm="part">${ICS.part}<b>${xm('part')}</b><span>${xm('parts')}</span></button></div><div class="xglang">${['fr','en','ar'].map(l=>`<button data-xl="${l}" aria-pressed="${l===lang}">${{fr:'FR',en:'EN',ar:'ع'}[l]}</button>`).join('')}</div></div>`;
- g.hidden=false;document.body.style.overflow='hidden'}
-document.addEventListener('click',e=>{const b=e.target.closest('[data-xm]');if(b){$1('#xgate').hidden=true;document.body.style.overflow='';setMode(b.dataset.xm);scrollTo(0,0);return}
- const l=e.target.closest('[data-xl]');if(l){const lb=document.querySelector(`.lang button[data-l="${l.dataset.xl}"]`);lb&&lb.click();setTimeout(gate,0)}});
-
 /* ---------- Sélection de saison (change chaque lundi) ---------- */
 const W={hiver:{Oriental:3,Spicy:3,Oud:3,Gourmand:2,Sweet:2,Resinous:2,Leathery:2,Smoky:2,Woody:1,Powdery:1,Creamy:1,Animal:1,Aquatic:-3,Citrus:-2,Fresh:-2,Green:-1},
  printemps:{Floral:3,Green:2,Fruity:2,Fresh:2,Powdery:1,Musky:1,Citrus:1,Oud:-2,Smoky:-2,Leathery:-1},
@@ -700,8 +651,7 @@ function drawSaison(){const S=xm('S')[season];$1('#xsey').textContent=xm('ey');$
  if(window._temp!=null){const m=$1('#xmeteo');m.hidden=false;m.innerHTML=`Bordj Bou Arréridj · <b>${window._temp} °C</b> ${xm('today')}`}}
 const _rf=renderFeat;renderFeat=function(){_rf();drawSaison();if(window._xtexts)window._xtexts()};
 fetch('https://api.open-meteo.com/v1/forecast?latitude=36.07&longitude=4.76&current=temperature_2m').then(r=>r.json()).then(j=>{window._temp=Math.round(j.current.temperature_2m);drawSaison()}).catch(()=>{});
-document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>setTimeout(modeBtn,0)));
-if(mode==='pro'||mode==='part')setMode(mode);else{setMode('pro');gate()}
+drawSaison();
 })();
 </script>
 <!-- /ANIMATIONS-MEDITERRANA -->
