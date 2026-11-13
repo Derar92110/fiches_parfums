@@ -16,10 +16,15 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: { node-version: 20 }
-      - run: SHARD=${{ matrix.shard }}/8 LIMIT=$(grep -o 'LIMIT=[0-9]*' photos/lancer.txt | cut -d= -f2) node scripts/photos-parfumo.mjs
+      - run: |
+          export SHARD=${{ matrix.shard }}/8
+          export LIMIT=$(grep -o 'LIMIT=[0-9]*' photos/lancer.txt | cut -d= -f2)
+          node scripts/photos-parfumo.mjs
       - if: always()
         uses: actions/upload-artifact@v4
-        with: { name: part-${{ matrix.shard }}, path: photos/ }
+        with:
+          name: part-${{ matrix.shard }}
+          path: photos/
   fusion:
     needs: dl
     if: always()
