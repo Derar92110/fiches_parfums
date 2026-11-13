@@ -1,1 +1,1 @@
-LIMIT=0 complet
+LIMIT=40 essai verifie

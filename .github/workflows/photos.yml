@@ -11,13 +11,13 @@ jobs:
     timeout-minutes: 340
     strategy:
       fail-fast: false
-      matrix: { shard: [0, 1, 2, 3, 4, 5, 6, 7] }
+      matrix: { shard: [0, 1, 2, 3] }
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: { node-version: 20 }
       - run: |
-          export SHARD=${{ matrix.shard }}/8
+          export SHARD=${{ matrix.shard }}/4
           export LIMIT=$(grep -o 'LIMIT=[0-9]*' photos/lancer.txt | cut -d= -f2)
           node scripts/photos-parfumo.mjs
       - if: always()
