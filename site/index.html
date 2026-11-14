@@ -533,7 +533,8 @@ applyLang();
 .xring{visibility:hidden;height:0!important;margin:0!important}
 .xplinth{display:none}
 .xfp{width:170px;height:226px;margin:6px auto 12px;animation:xfin .6s ease}
-.xfp .xph{display:block;position:relative;overflow:hidden;border-radius:6px;height:100%;box-shadow:0 0 26px rgba(232,196,106,.45),0 14px 22px rgba(0,0,0,.45);border-color:#E8C46A}
+.xfp .xph{display:flex;align-items:center;justify-content:center;isolation:isolate;background:radial-gradient(120% 85% at 50% 38%,#FFFDF8 0%,#F6EEDD 55%,#E9DCC0 100%);position:relative;overflow:hidden;border-radius:6px;height:100%;box-shadow:0 0 26px rgba(232,196,106,.45),0 14px 22px rgba(0,0,0,.45);border-color:#E8C46A}
+.xfp .xph img{width:100%;height:100%;object-fit:contain;padding:12px 14px 16px;mix-blend-mode:multiply}
 @keyframes xfin{from{opacity:0;transform:translateY(10px) scale(.96)}to{opacity:1;transform:none}}
 @media(min-width:700px){.xfp{width:210px;height:280px}}
 .xdots{display:flex;gap:6px;justify-content:center;margin-top:14px}.xdots i{width:6px;height:6px;border-radius:3px;background:rgba(244,237,224,.25);transition:all .3s}.xdots i.on{background:#C9A24B;width:18px}
@@ -633,16 +634,24 @@ texts();
 .xsearch input::placeholder{color:#5C6B77}
 .xsearch form:focus-within{box-shadow:0 0 0 3px rgba(201,162,75,.45),0 10px 30px rgba(0,0,0,.25)}
 .xsearch button[type=submit]{font:inherit;font-size:13px;letter-spacing:.12em;text-transform:uppercase;background:#C9A24B;color:#0F2A3F;border:0;padding:0 18px;cursor:pointer;font-weight:500}
-.xsug{position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:20;background:#FBF7EE;border:1px solid rgba(15,42,63,.16);border-radius:4px;box-shadow:0 14px 34px rgba(0,0,0,.3);overflow:hidden;color:#0F2A3F}
-.xsug button{display:grid;grid-template-columns:40px minmax(0,1fr) auto;gap:10px;align-items:center;width:100%;font:inherit;text-align:start;background:none;border:0;border-bottom:1px dotted rgba(15,42,63,.16);padding:8px 12px;cursor:pointer;color:inherit}
-.xsug button:hover,.xsug button:focus{background:#F1E7D3;outline:none}
-.xsug .xthw{width:40px;height:50px;border-radius:4px;background:radial-gradient(120% 90% at 50% 40%,#FFFDF8,#EFE4CC);display:flex;isolation:isolate;overflow:hidden}
+.xsug{position:absolute;left:0;right:0;top:calc(100% + 8px);z-index:20;background:#FBF7EE;border:1px solid rgba(201,162,75,.55);border-radius:10px;box-shadow:0 22px 48px rgba(0,0,0,.38);overflow:hidden;color:#0F2A3F;animation:xsugin .18s ease;max-height:min(70vh,560px);overflow-y:auto}
+@keyframes xsugin{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.xsug button{display:grid;grid-template-columns:52px minmax(0,1fr) auto;gap:14px;align-items:center;width:100%;font:inherit;text-align:start;background:none;border:0;border-bottom:1px solid rgba(15,42,63,.08);border-inline-start:3px solid transparent;padding:10px 16px 10px 13px;cursor:pointer;color:inherit;transition:background .15s,border-color .15s}
+.xsug button:hover,.xsug button:focus{background:#F3EAD6;border-inline-start-color:#C9A24B;outline:none}
+.xsug .xthw{width:52px;height:66px;border-radius:6px;background:radial-gradient(120% 90% at 50% 40%,#FFFDF8,#EFE4CC);display:flex;isolation:isolate;overflow:hidden;border:1px solid rgba(201,162,75,.3)}
 .xsug .fb{width:60%;font-size:14px;border-width:1px}
-.xsug .xth{width:100%;height:100%;object-fit:cover;mix-blend-mode:multiply}
-.xsug b{display:block;font-weight:500;overflow-wrap:anywhere;font-size:14px}
-.xsug i{font-style:normal;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A1F}
-.xsug .pr{font-size:18px;color:#0F2A3F}
-.xsug .all{display:block;text-align:center;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#8A6A1F;border-bottom:0;padding:11px}
+.xsug .xth{width:100%;height:100%;object-fit:contain;padding:4px;mix-blend-mode:multiply}
+.xsug b{display:block;font-weight:500;overflow-wrap:anywhere;font-size:15px;line-height:1.25;margin:2px 0 5px}
+.xsug b mark{background:none;color:#8A6A1F;font-weight:600}
+.xsug i{font-style:normal;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#8A6A1F}
+.xsug .xtags{display:flex;flex-wrap:wrap;gap:5px}
+.xsug .xtag{font-size:11.5px;line-height:1;padding:4px 8px;border-radius:20px;background:#fff;border:1px solid rgba(15,42,63,.18);color:#33495A;white-space:nowrap}
+.xsug .xtag.t{background:#0F2A3F;border-color:#0F2A3F;color:#F6E2A8}
+.xsug .xtag.k{background:#F6E2A8;border-color:#E2C677;color:#5A4410}
+.xsug .pr{font-family:inherit;font-size:19px;color:#0F2A3F;white-space:nowrap;text-align:end}
+.xsug .all{display:block;text-align:center;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#0F2A3F;background:#F1E7D3;border:0;border-inline-start:0;padding:13px;font-weight:500}
+.xsug .all:hover,.xsug .all:focus{background:#E9DCC0}
+@media(max-width:520px){.xsug button{grid-template-columns:44px minmax(0,1fr) auto;gap:10px;padding:9px 12px 9px 9px}.xsug .xthw{width:44px;height:56px}.xsug b{font-size:14px}.xsug .pr{font-size:17px}}
 /* Sélection de saison */
 #saison .grid{margin-top:4px}
 </style>
@@ -690,8 +699,11 @@ const IDX=DATA.map(r=>norm(r[0]+' '+r[1]+' '+r[2]));
 function hits(q){const w=norm(q).split(/\s+/).filter(Boolean);if(!w.length)return[];const out=[];IDX.forEach((t,i)=>{if(w.every(x=>t.includes(x)))out.push(i)});return out}
 function sug(){const q=$1('#xsq').value.trim(),box=$1('#xsug');if(q.length<2){box.hidden=true;return}
  const H=hits(q);if(!H.length){box.innerHTML=`<button type="button" class="all" disabled>${xs('none')}</button>`;box.hidden=false;return}
- H.sort((a,b)=>(DATA[a][6]==='Parfums'?0:1)-(DATA[b][6]==='Parfums'?0:1));
- box.innerHTML=H.slice(0,6).map(i=>{const r=DATA[i],su=IMG[i]||bimg(i,80,100);return `<button type="button" data-f="${i}"><span class="xthw">${su?`<img class="xth" src="${su}" alt="" referrerpolicy="no-referrer" onerror="imgKo(this)">`:''}</span><span><i>${esc(tt(r[0]))}</i><b>${esc(r[1])}</b></span><span class="pr">${eur(r[4])}</span></button>`}).join('')+`<button type="button" class="all" id="xsall">${xs('all').replace('{n}',H.length)}</button>`;box.hidden=false}
+ H.sort((a,b)=>(DATA[a][6]==='Parfums'?0:1)-(DATA[b][6]==='Parfums'?0:1)||DATA[a][1].length-DATA[b][1].length||DATA[a][4]-DATA[b][4]);
+ const W=norm(q).split(/\s+/).filter(x=>x.length>1);
+ const hl=t=>{let o=esc(t);if(!W.length)return o;const n=norm(t);const m=new Array(t.length).fill(0);W.forEach(w=>{let k=n.indexOf(w);while(k>=0){for(let j=k;j<k+w.length;j++)m[j]=1;k=n.indexOf(w,k+1)}});if(n.length!==t.length)return o;let r='',on=0;for(let j=0;j<t.length;j++){if(m[j]&&!on){r+='<mark>';on=1}if(!m[j]&&on){r+='</mark>';on=0}r+=esc(t[j])}return r+(on?'</mark>':'')};
+ const tags=r=>{const T=[];const ty=r[2]||'';const tst=/^Testeur/.test(ty);if(tst)T.push(`<span class="xtag t">${esc(tt('Testeur'))}</span>`);const f=tst?ty.replace(/^Testeur\s*·?\s*/,''):ty;if(f)T.push(`<span class="xtag k">${esc(tt(f))}</span>`);if(r[5])T.push(`<span class="xtag">${esc(r[5])}</span>`);return T.join('')};
+ box.innerHTML=H.slice(0,6).map(i=>{const r=DATA[i],su=IMG[i]||bimg(i,80,100);return `<button type="button" data-f="${i}"><span class="xthw">${su?`<img class="xth" src="${su}" alt="" referrerpolicy="no-referrer" onerror="imgKo(this)">`:''}</span><span><i>${esc(tt(r[0]))}</i><b>${hl(r[1])}</b><span class="xtags">${tags(r)}</span></span><span class="pr">${eur(r[4])}</span></button>`}).join('')+`<button type="button" class="all" id="xsall">${xs('all').replace('{n}',H.length)}</button>`;box.hidden=false}
 function goCat(){const q=$1('#xsq').value.trim();$1('#xsug').hidden=true;$1('#q').value=q;$1('#b').value='';$1('#c').value='';$1('#q').dispatchEvent(new Event('input'));document.getElementById('catalogue').scrollIntoView({behavior:'smooth'})}
 $1('#xsq').addEventListener('input',sug);
 $1('#xsf').addEventListener('submit',e=>{e.preventDefault();$1('#xsq').blur();goCat()});
