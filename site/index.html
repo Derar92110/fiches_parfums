@@ -530,6 +530,12 @@ applyLang();
 .xrow{display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap}
 .xrow .pr{font-size:24px;color:#F4EDE0}
 .xgo{font:inherit;font-size:12px;letter-spacing:.12em;text-transform:uppercase;background:#C9A24B;color:#0F2A3F;border:0;border-radius:3px;padding:10px 16px;cursor:pointer}
+.xring{visibility:hidden;height:0!important;margin:0!important}
+.xplinth{display:none}
+.xfp{width:170px;height:226px;margin:6px auto 12px;animation:xfin .6s ease}
+.xfp .xph{display:block;position:relative;overflow:hidden;border-radius:6px;height:100%;box-shadow:0 0 26px rgba(232,196,106,.45),0 14px 22px rgba(0,0,0,.45);border-color:#E8C46A}
+@keyframes xfin{from{opacity:0;transform:translateY(10px) scale(.96)}to{opacity:1;transform:none}}
+@media(min-width:700px){.xfp{width:210px;height:280px}}
 .xdots{display:flex;gap:6px;justify-content:center;margin-top:14px}.xdots i{width:6px;height:6px;border-radius:3px;background:rgba(244,237,224,.25);transition:all .3s}.xdots i.on{background:#C9A24B;width:18px}
 .xhint{position:absolute;top:12px;inset-inline-end:14px;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#A9B7C2}
 /* 5. Flacon qui vole vers la réservation */
@@ -579,7 +585,7 @@ $1('#xdusts').innerHTML=Array.from({length:26},()=>`<span class="xdust" style="l
 let ang=0,vel=.16,drag=null,R=220,front=-1;
 function lay(){R=Math.min(250,Math.max(150,st.clientWidth*.34));[...ring.children].forEach((el,i)=>el.style.transform=`rotateY(${i*360/N}deg) translateZ(${R}px)`)}
 function drawFront(){const i=RING[front],f=hasF(i)?FL[FK[i]]:null,acc=f&&f[4]?f[4].slice(0,3):[];
- $1('#xfront').innerHTML=`<i>${esc(tt(DATA[i][0]))}</i><b>${nm(i)}</b><div class="xacc">${acc.map(a=>`<em>${esc(ta(a))}</em>`).join('')}</div><div class="xrow"><span class="pr">${eur(DATA[i][4])}</span><button class="xgo" data-f="${i}">${xt('see')}</button></div>`}
+ $1('#xfront').innerHTML=`<div class="xfp" data-f="${i}">${pimg(i,300,400)}</div><i>${esc(tt(DATA[i][0]))}</i><b>${nm(i)}</b><div class="xacc">${acc.map(a=>`<em>${esc(ta(a))}</em>`).join('')}</div><div class="xrow"><span class="pr">${eur(DATA[i][4])}</span><button class="xgo" data-f="${i}">${xt('see')}</button></div>`}
 function frame(){
  if(!drag){ang-=vel;vel+=(.16-vel)*.02}
  ring.style.transform=`translateZ(${-R}px) rotateY(${ang}deg)`;
