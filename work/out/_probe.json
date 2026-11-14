@@ -1,0 +1,178 @@
+{
+ "histoiresdeparfums.com": {
+  "st": "200 https://histoiresdeparfums.com/products.json?limit=250&page=2",
+  "n": 36
+ },
+ "boadiceathevictorious.com": {
+  "st": "404 https://boadiceathevictorious.com/products.json?limit=250&page=1",
+  "n": 0
+ },
+ "vilhelmparfumerie.com": {
+  "st": "200 https://vilhelmparfumerie.com/products.json?limit=250&page=2",
+  "n": 134
+ },
+ "etatlibredorange.com": {
+  "st": "200 https://etatlibredorange.com/products.json?limit=250&page=2",
+  "n": 96
+ },
+ "electimuss.com": {
+  "st": "200 https://electimuss.com/products.json?limit=250&page=2",
+  "n": 64
+ },
+ "sergelutens.com": {
+  "st": "200 https://sergelutens.com/products.json?limit=250&page=2",
+  "n": 239
+ },
+ "ormondejayne.com": {
+  "st": "200 https://ormondejayne.com/products.json?limit=250&page=2",
+  "n": 91
+ },
+ "goldfieldandbanks.com": {
+  "st": "200 https://goldfieldandbanks.com/products.json?limit=250&page=2",
+  "n": 65
+ },
+ "tizianaterenzi.com": {
+  "st": "404 https://tizianaterenzi.com/products.json?limit=250&page=1",
+  "n": 0
+ },
+ "shl777.com": {
+  "st": "ERR fetch failed",
+  "n": 0
+ },
+ "floraiku.com": {
+  "st": "200 https://floraiku.com/products.json?limit=250&page=2",
+  "n": 82
+ },
+ "fr.memoparis.com": {
+  "st": "200 https://fr.memoparis.com/products.json?limit=250&page=2",
+  "n": 160
+ },
+ "lattafa.com": {
+  "st": "403 https://lattafa.com/products.json?limit=250&page=1",
+  "n": 0
+ },
+ "bdkparfums.com": {
+  "st": "200 https://bdkparfums.com/products.json?limit=250&page=2",
+  "n": 77
+ },
+ "nishane.com": {
+  "st": "404 https://nishane.com/products.json?limit=250&page=1",
+  "n": 0
+ },
+ "carnerbarcelona.com": {
+  "st": "200 https://carnerbarcelona.com/products.json?limit=250&page=2",
+  "n": 145
+ },
+ "exnihilo-paris.com": {
+  "st": "ERR fetch failed",
+  "n": 0
+ },
+ "fredericmalle.com": {
+  "st": "403 https://fredericmalle.com/products.json?limit=250&page=1",
+  "n": 0
+ },
+ "itsnotvape.com": {
+  "st": "ERR fetch failed",
+  "n": 0
+ },
+ "odeurdemarques.com": {
+  "st": "ERR fetch failed",
+  "n": 0
+ },
+ "parfums-de-marly.com": {
+  "st": "200 https://parfums-de-marly.com/products.json?limit=250&page=2",
+  "n": 161
+ },
+ "fabbricadellamusa.com": {
+  "st": "200 https://fabbricadellamusa.com/products.json?limit=250&page=2",
+  "n": 22
+ },
+ "lattafa-usa.com": {
+  "st": "200 https://lattafa-usa.com/products.json?limit=250&page=3",
+  "n": 285
+ },
+ "amouage.com": {
+  "st": "200 https://amouage.com/products.json?limit=250&page=2",
+  "n": 120
+ },
+ "eu.maisonmargiela-fragrances.com": {
+  "st": "ERR fetch failed",
+  "n": 0
+ },
+ "ellakparfums.com": {
+  "st": "200 https://ellakparfums.com/products.json?limit=250&page=2",
+  "n": 36
+ },
+ "initioparfums.com": {
+  "st": "200 https://initioparfums.com/products.json?limit=250&page=2",
+  "n": 116
+ },
+ "xerjoff.com": {
+  "st": "200 https://xerjoff.com/products.json?limit=250&page=3",
+  "n": 389
+ },
+ "atkinsons1799.com": {
+  "st": "200 https://atkinsons1799.com/products.json?limit=250&page=2",
+  "n": 124
+ },
+ "rojaparfums.com": {
+  "st": "200 https://rojaparfums.com/products.json?limit=250&page=2",
+  "n": 156
+ },
+ "juliettehasagun.com": {
+  "st": "200 https://juliettehasagun.com/products.json?limit=250&page=3",
+  "n": 258
+ },
+ "maisonmargiela-fragrances.com": {
+  "st": "403 https://www.maisonmargiela-fragrances.us/?limit=250&page=1",
+  "n": 0
+ },
+ "mizensir.com": {
+  "st": "200 https://mizensir.com/products.json?limit=250&page=4",
+  "n": 597
+ },
+ "thameenlondon.com": {
+  "st": "200 https://thameenfragrance.com/products.json?limit=250&page=2",
+  "n": 65
+ },
+ "atelierdesors.com": {
+  "st": "200 https://atelierdesors.com/en-intl/products.json?limit=250&page=2",
+  "n": 88
+ },
+ "liquidesimaginaires.com": {
+  "st": "404 https://www.liquidesimaginaires.com/products.json?limit=250&page=1",
+  "n": 0
+ },
+ "byredo.com": {
+  "st": "404 https://www.byredo.com/products.json?limit=250&page=1",
+  "n": 0
+ },
+ "christianlouboutin.com": {
+  "st": "403 https://us.christianlouboutin.com/us_en/",
+  "n": 0
+ },
+ "armaf.com": {
+  "st": "200 https://armaf.com/products.json?limit=250&page=4",
+  "n": 519
+ },
+ "clivechristian.com": {
+  "st": "404 https://www.clivechristian.com/products.json?limit=250&page=1",
+  "n": 0
+ },
+ "jomalone.com": {
+  "st": "403 https://jomalone.com/products.json?limit=250&page=1",
+  "n": 0
+ },
+ "acquadiparma.com": {
+  "st": "404 https://www.acquadiparma.com/products.json?limit=250&page=1",
+  "n": 0
+ },
+ "montaleparfums.com": {
+  "st": "404 https://www.montaleparfums.com/products.json?limit=250&page=1",
+  "n": 0
+ },
+ "diptyqueparis.com": {
+  "st": "200 https://diptyqueparis.com/fr-fr/products.json?limit=250&page=3",
+  "n": 437
+ }
+}
