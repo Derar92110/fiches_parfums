@@ -1,0 +1,372 @@
+{
+ "shl777.com": {
+  "n": 0,
+  "log": [
+   "ERR fetch failed"
+  ]
+ },
+ "www.prada-beauty.com": {
+  "n": 0,
+  "log": [
+   "robots 200",
+   "403 https://www.prada-beauty.com/sitemap_index.xml"
+  ]
+ },
+ "www.fredericmalle.com": {
+  "n": 0,
+  "log": [
+   "robots 200",
+   "403 https://www.fredericmalle.com/sitemap.xml"
+  ]
+ },
+ "www.liquidesimaginaires.com": {
+  "n": 134,
+  "log": [
+   "robots 200",
+   "200 https://www.liquidesimaginaires.com/sitemap.xml",
+   "200 https://www.liquidesimaginaires.com/sitemap/products/1.xml",
+   "200 https://www.liquidesimaginaires.com/sitemap/static/1.xml",
+   "200 https://www.liquidesimaginaires.com/sitemap/pages/1.xml"
+  ]
+ },
+ "www.bulgari.com": {
+  "n": 0,
+  "log": [
+   "robots 200",
+   "403 https://www.bulgari.com/sitemap.xml"
+  ]
+ },
+ "www.boadiceathevictorious.com": {
+  "n": 0,
+  "log": [
+   "robots 404",
+   "404 https://www.boadiceathevictorious.com/sitemap.xml"
+  ]
+ },
+ "www.clivechristian.com": {
+  "n": 133,
+  "log": [
+   "robots 200",
+   "200 https://www.clivechristian.com/sitemap.xml",
+   "200 https://www.clivechristian.com/sitemap/agentic/1.xml",
+   "200 https://www.clivechristian.com/sitemap/pages/1.xml",
+   "200 https://www.clivechristian.com/sitemap/collections/1.xml",
+   "200 https://www.clivechristian.com/sitemap/products/1.xml"
+  ]
+ },
+ "www.maisonmargiela-fragrances.com": {
+  "n": 0,
+  "log": [
+   "robots 403",
+   "403 https://www.maisonmargiela-fragrances.com/sitemap.xml"
+  ]
+ },
+ "www.christianlouboutin.com": {
+  "n": 0,
+  "log": [
+   "robots 403",
+   "403 https://www.christianlouboutin.com/sitemap.xml"
+  ]
+ },
+ "www.sephora.fr": {
+  "n": 0,
+  "log": [
+   "robots 200",
+   "404 https://www.sephora.fr/sitemap.xml"
+  ]
+ },
+ "www.electimuss.com": {
+  "n": 217,
+  "log": [
+   "robots 200",
+   "200 https://www.electimuss.com/sitemap.xml",
+   "200 https://www.electimuss.com/sitemap_agentic_discovery.xml",
+   "200 https://www.electimuss.com/sitemap_products_1.xml?from=8820663091540&to=15876370432340",
+   "200 https://www.electimuss.com/sitemap_pages_1.xml?from=126742102356&to=712934785364",
+   "200 https://www.electimuss.com/sitemap_collections_1.xml?from=625393926484&to=725908390228",
+   "200 https://www.electimuss.com/sitemap_blogs_1.xml",
+   "200 https://www.electimuss.com/sitemap_articles_1.xml"
+  ]
+ },
+ "www.armanibeauty.fr": {
+  "n": 0,
+  "log": [
+   "robots 200",
+   "403 https://www.armanibeauty.fr/sitemap_0.xml",
+   "403 https://www.armanibeauty.it/sitemap_0.xml",
+   "403 https://www.armanibeauty.es/sitemap_0.xml",
+   "403 https://www.armanibeauty.de/sitemap_0.xml",
+   "403 https://www.armanibeauty.nl/sitemap_0.xml",
+   "403 https://www.armanibeauty.be/sitemap_0.xml",
+   "403 https://www.armani-beauty.at/sitemap_0.xml",
+   "403 https://www.armanibeauty.ch/sitemap_0.xml",
+   "403 https://www.armanibeauty.co.uk/sitemap_0.xml"
+  ]
+ },
+ "www.acquadiparma.com": {
+  "n": 4127,
+  "log": [
+   "robots 200",
+   "200 https://www.acquadiparma.com/it/it/sitemap_index.xml",
+   "200 https://www.acquadiparma.com/en/int/sitemap_index.xml",
+   "200 https://www.acquadiparma.com/it/it/sitemap_0-product.xml",
+   "200 https://www.acquadiparma.com/it/it/sitemap_1-content.xml",
+   "200 https://www.acquadiparma.com/it/it/sitemap_2.xml",
+   "200 https://www.acquadiparma.com/en/int/sitemap_0-product.xml",
+   "200 https://www.acquadiparma.com/en/int/sitemap_1-category.xml",
+   "200 https://www.acquadiparma.com/en/int/sitemap_2-content.xml",
+   "200 https://www.acquadiparma.com/en/int/sitemap_3.xml"
+  ]
+ },
+ "www.tizianaterenzi.com": {
+  "n": 68,
+  "log": [
+   "robots 200",
+   "200 https://tizianaterenzi.com/sitemap_index.xml",
+   "200 https://tizianaterenzi.com/post-sitemap.xml",
+   "200 https://tizianaterenzi.com/page-sitemap.xml"
+  ]
+ },
+ "www.chanel.com": {
+  "n": 57934,
+  "log": [
+   "robots 200",
+   "200 https://www.chanel.com/sitemap.xml",
+   "200 https://www.chanel.com/ae-en/sitemap.xml",
+   "200 https://www.chanel.com/be-fr/sitemap.xml",
+   "200 https://www.chanel.com/bh-en/sitemap.xml",
+   "200 https://www.chanel.com/ca-en/sitemap.xml",
+   "200 https://www.chanel.com/ca-fr/sitemap.xml",
+   "200 https://www.chanel.com/ch-fr/sitemap.xml",
+   "200 https://www.chanel.com/fr/sitemap.xml",
+   "200 https://www.chanel.com/hk-en/sitemap.xml",
+   "403 https://www.chanel.com/il-en/sitemap.xml",
+   "200 https://www.chanel.com/kw-en/sitemap.xml",
+   "200 https://www.chanel.com/lu-fr/sitemap.xml",
+   "200 https://www.chanel.com/sa-en/sitemap.xml"
+  ]
+ },
+ "www.nishane.com": {
+  "n": 302,
+  "log": [
+   "robots 200",
+   "200 https://nishane.com/sitemap_index.xml",
+   "200 https://nishane.com/page-sitemap.xml",
+   "200 https://nishane.com/product-sitemap.xml",
+   "200 https://nishane.com/product_cat-sitemap.xml"
+  ]
+ },
+ "www.dolcegabbana.com": {
+  "n": 354000,
+  "log": [
+   "robots 200",
+   "200 https://www.dolcegabbana.com/de-at/sitemap-category_0.xml",
+   "200 https://www.dolcegabbana.com/de-ch/sitemap-category_0.xml",
+   "200 https://www.dolcegabbana.com/de-de/sitemap-category_0.xml",
+   "200 https://www.dolcegabbana.com/de-pl/sitemap-category_0.xml",
+   "200 https://www.dolcegabbana.com/de-rs/sitemap-category_0.xml",
+   "200 https://www.dolcegabbana.com/en-ad/sitemap-category_0.xml",
+   "200 https://www.dolcegabbana.com/en-ae/sitemap-category_0.xml",
+   "200 https://www.dolcegabbana.com/en-au/sitemap-category_0.xml",
+   "200 https://www.dolcegabbana.com/en-ba/sitemap-category_0.xml",
+   "200 https://www.dolcegabbana.com/en-be/sitemap-category_0.xml",
+   "200 https://www.dolcegabbana.com/en-bg/sitemap-category_0.xml",
+   "200 https://www.dolcegabbana.com/en-ca/sitemap-category_0.xml",
+   "200 https://www.dolcegabbana.com/en-ch/sitemap-category_0.xml",
+   "200 https://www.dolcegabbana.com/en-cy/sitemap-category_0.xml"
+  ]
+ },
+ "tizianaterenzi.it": {
+  "n": 0,
+  "log": [
+   "ERR fetch failed"
+  ]
+ },
+ "www.montaleparfums.com": {
+  "n": 2570,
+  "log": [
+   "robots 200",
+   "200 https://www.montaleparfums.com/1_index_sitemap.xml",
+   "200 https://www.montaleparfums.com/ita/2_index_sitemap.xml",
+   "200 https://www.montaleparfums.com/esp/3_index_sitemap.xml",
+   "200 https://www.montaleparfums.com/civ/4_index_sitemap.xml",
+   "200 https://www.montaleparfums.com/tha/5_index_sitemap.xml",
+   "200 https://www.montaleparfums.com/nld/6_index_sitemap.xml",
+   "200 https://www.montaleparfums.com/1_en_0_sitemap.xml",
+   "200 https://www.montaleparfums.com/1_fr_0_sitemap.xml",
+   "200 https://www.montaleparfums.com/1_it_0_sitemap.xml",
+   "200 https://www.montaleparfums.com/1_es_0_sitemap.xml",
+   "200 https://www.montaleparfums.com/1_de_0_sitemap.xml",
+   "200 https://www.montaleparfums.com/1_nl_0_sitemap.xml",
+   "200 https://www.montaleparfums.com/ita/2_en_0_sitemap.xml",
+   "200 https://www.montaleparfums.com/ita/2_it_0_sitemap.xml"
+  ]
+ },
+ "www.givenchybeauty.com": {
+  "n": 6596,
+  "log": [
+   "robots 200",
+   "200 https://www.givenchybeauty.com/int/en/sitemap-global.xml",
+   "200 https://www.givenchybeauty.com/ru/sitemap_0-product.xml",
+   "200 https://www.givenchybeauty.com/ru/sitemap_1-category.xml",
+   "200 https://www.givenchybeauty.com/ru/sitemap_2-content.xml",
+   "200 https://www.givenchybeauty.com/ru/sitemap_3-folder.xml",
+   "200 https://www.givenchybeauty.com/ru/sitemap_4.xml",
+   "200 https://www.givenchybeauty.com/jp/sitemap_0-product.xml",
+   "200 https://www.givenchybeauty.com/jp/sitemap_1-category.xml",
+   "200 https://www.givenchybeauty.com/jp/sitemap_2-content.xml",
+   "200 https://www.givenchybeauty.com/jp/sitemap_3-folder.xml",
+   "200 https://www.givenchybeauty.com/jp/sitemap_4.xml",
+   "200 https://www.givenchybeauty.com/ca/en/sitemap_0-product.xml",
+   "200 https://www.givenchybeauty.com/ca/en/sitemap_1-category.xml",
+   "200 https://www.givenchybeauty.com/ca/en/sitemap_2-content.xml"
+  ]
+ },
+ "www.guerlain.com": {
+  "n": 7030,
+  "log": [
+   "robots 200",
+   "200 https://www.guerlain.com/th/th-th/sitemap_index.xml",
+   "200 https://www.guerlain.com/tw/zh-tw/sitemap_index.xml",
+   "200 https://www.guerlain.com/hk/zh-hk/sitemap_index.xml",
+   "200 https://www.guerlain.com/sg/en-sg/sitemap_index.xml",
+   "200 https://www.guerlain.com/sa/en-sa/sitemap_index.xml",
+   "200 https://www.guerlain.com/sa/ar-sa/sitemap_index.xml",
+   "200 https://www.guerlain.com/ae/ar-ae/sitemap_index.xml",
+   "200 https://www.guerlain.com/kr/ko-kr/sitemap_index.xml",
+   "200 https://www.guerlain.com/br/pt-br/sitemap_index.xml",
+   "200 https://www.guerlain.com/ca/en-ca/sitemap_index.xml",
+   "200 https://www.guerlain.com/ch/de-ch/sitemap_index.xml",
+   "200 https://www.guerlain.com/be/fr-be/sitemap_index.xml",
+   "200 https://www.guerlain.com/pl/pl-pl/sitemap_index.xml",
+   "200 https://www.guerlain.com/pt/pt-pt/sitemap_index.xml"
+  ]
+ },
+ "www.hermes.com": {
+  "n": 16702,
+  "log": [
+   "robots 200",
+   "200 https://www.hermes.com/at/de/sitemap_index.xml",
+   "200 https://www.hermes.com/au/en/sitemap_index.xml",
+   "200 https://www.hermes.com/be/en/sitemap_index.xml",
+   "200 https://www.hermes.com/be/fr/sitemap_index.xml",
+   "200 https://www.hermes.com/br/pt/sitemap_index.xml",
+   "200 https://www.hermes.com/ca/en/sitemap_index.xml",
+   "200 https://www.hermes.com/ca/fr/sitemap_index.xml",
+   "200 https://www.hermes.com/ch/de/sitemap_index.xml",
+   "200 https://www.hermes.com/ch/fr/sitemap_index.xml",
+   "200 https://www.hermes.com/cz/en/sitemap_index.xml",
+   "200 https://www.hermes.com/de/de/sitemap_index.xml",
+   "200 https://www.hermes.com/dh/en/sitemap_index.xml",
+   "200 https://www.hermes.com/dk/en/sitemap_index.xml",
+   "200 https://www.hermes.com/es/es/sitemap_index.xml"
+  ]
+ },
+ "www.rabanne.com": {
+  "n": 10616,
+  "log": [
+   "robots 200",
+   "200 https://www.rabanne.com/sitemap/be/fragrance/sitemap.xml",
+   "200 https://www.rabanne.com/sitemap/br/fragrance/sitemap.xml",
+   "200 https://www.rabanne.com/sitemap/de/fragrance/sitemap.xml",
+   "200 https://www.rabanne.com/sitemap/es/fragrance/sitemap.xml",
+   "200 https://www.rabanne.com/sitemap/mx/fragrance/sitemap.xml",
+   "200 https://www.rabanne.com/sitemap/fr/fragrance/sitemap.xml",
+   "200 https://www.rabanne.com/sitemap/it/fragrance/sitemap.xml",
+   "200 https://www.rabanne.com/sitemap/lu/fragrance/sitemap.xml",
+   "200 https://www.rabanne.com/sitemap/nl/fragrance/sitemap.xml",
+   "200 https://www.rabanne.com/sitemap/pt/fragrance/sitemap.xml",
+   "200 https://www.rabanne.com/sitemap/uk/fragrance/sitemap.xml",
+   "200 https://www.rabanne.com/sitemap/us/fragrance/sitemap.xml",
+   "200 https://www.rabanne.com/sitemap/ww/fragrance/sitemap.xml",
+   "200 https://api.rabanne.com/puigcommercewebservices/v2/basesites/pacoRabanneFragranceBeSite/sitemap/homepage-fr-eur.xml"
+  ]
+ },
+ "www.carolinaherrera.com": {
+  "n": 20001,
+  "log": [
+   "robots 200",
+   "200 https://www.carolinaherrera.com/sitemap.xml",
+   "200 https://www.carolinaherrera.com/assets/sitemaps/ae/sitemap.xml",
+   "200 https://www.carolinaherrera.com/assets/sitemaps/br/sitemap.xml",
+   "200 https://www.carolinaherrera.com/assets/sitemaps/cl/sitemap.xml",
+   "200 https://www.carolinaherrera.com/assets/sitemaps/de/sitemap.xml",
+   "200 https://www.carolinaherrera.com/assets/sitemaps/es/sitemap.xml",
+   "200 https://www.carolinaherrera.com/assets/sitemaps/fr/sitemap.xml",
+   "200 https://www.carolinaherrera.com/assets/sitemaps/mx/sitemap.xml",
+   "200 https://www.carolinaherrera.com/assets/sitemaps/pt/sitemap.xml",
+   "200 https://www.carolinaherrera.com/assets/sitemaps/sa/sitemap.xml",
+   "200 https://www.carolinaherrera.com/assets/sitemaps/uk/sitemap.xml",
+   "200 https://www.carolinaherrera.com/assets/sitemaps/us/sitemap.xml",
+   "200 https://www.carolinaherrera.com/assets/sitemaps/ww/sitemap.xml",
+   "200 https://www.carolinaherrera.com/assets/sitemaps/ae/ar/sitemap.xml"
+  ]
+ },
+ "www.calvinklein.fr": {
+  "n": 0,
+  "log": [
+   "robots 200",
+   "ERR https://www.calvinklein.fr/sitemap.xml"
+  ]
+ },
+ "www.dior.com": {
+  "n": 384167,
+  "log": [
+   "robots 200",
+   "200 https://www.dior.com/sitemap.xml",
+   "200 https://www.dior.com/en_ae/fashion/sitemap.xml",
+   "200 https://www.dior.com/en_at/fashion/sitemap.xml",
+   "200 https://www.dior.com/en_au/fashion/sitemap.xml",
+   "200 https://www.dior.com/en_bg/fashion/sitemap.xml",
+   "200 https://www.dior.com/en_ca/fashion/sitemap.xml",
+   "200 https://www.dior.com/en_ch/fashion/sitemap.xml",
+   "200 https://www.dior.com/en_cy/fashion/sitemap.xml",
+   "200 https://www.dior.com/en_cz/fashion/sitemap.xml",
+   "200 https://www.dior.com/en_dk/fashion/sitemap.xml",
+   "200 https://www.dior.com/en_ee/fashion/sitemap.xml",
+   "200 https://www.dior.com/en_fi/fashion/sitemap.xml",
+   "200 https://www.dior.com/en_gb/fashion/sitemap.xml",
+   "200 https://www.dior.com/en_gr/fashion/sitemap.xml"
+  ]
+ },
+ "www.chloe.com": {
+  "n": 114609,
+  "log": [
+   "robots 200",
+   "200 https://www.chloe.com/en-us/sitemap_index.xml",
+   "200 https://www.chloe.com/fr-fr/sitemap_index.xml",
+   "200 https://www.chloe.com/en-ca/sitemap_index.xml",
+   "200 https://www.chloe.com/ja-jp/sitemap_index.xml",
+   "200 https://www.chloe.com/en-au/sitemap_index.xml",
+   "200 https://www.chloe.com/en-ae/sitemap_index.xml",
+   "200 https://www.chloe.com/en-us/sitemap_0.xml",
+   "200 https://www.chloe.com/en-us/sitemap-customSiteMapCategory_ChloeUS_1.xml",
+   "200 https://www.chloe.com/en-us/sitemap-customSiteMapContent_ChloeUS_1.xml",
+   "200 https://www.chloe.com/en-us/sitemap-customSiteMapProduct_ChloeUS_1.xml",
+   "200 https://www.chloe.com/en-us/sitemap-customSiteMapProduct_ChloeUS_2.xml",
+   "200 https://www.chloe.com/en-us/sitemap-customSiteMapProduct_ChloeUS_3.xml",
+   "200 https://www.chloe.com/en-us/sitemap-customSiteMapProduct_ChloeUS_4.xml",
+   "200 https://www.chloe.com/en-us/sitemap-customSiteMapProduct_ChloeUS_5.xml"
+  ]
+ },
+ "www.cartier.com": {
+  "n": 127660,
+  "log": [
+   "robots 200",
+   "200 https://www.cartier.com/sitemap_index.xml",
+   "200 https://www.cartier.com/en-hk.sitemap.xml",
+   "200 https://www.cartier.com/en-sg.sitemap.xml",
+   "200 https://www.cartier.com/en-au.sitemap.xml",
+   "ERR https://www.cartier.com/fr-fr.sitemap.xml",
+   "200 https://www.cartier.com/en-fr.sitemap.xml",
+   "200 https://www.cartier.com/fr-ch.sitemap.xml",
+   "200 https://www.cartier.com/en-ch.sitemap.xml",
+   "200 https://www.cartier.com/en-gb.sitemap.xml",
+   "200 https://www.cartier.com/en-es.sitemap.xml",
+   "200 https://www.cartier.com/en-at.sitemap.xml",
+   "200 https://www.cartier.com/en-dk.sitemap.xml",
+   "200 https://www.cartier.com/en-se.sitemap.xml",
+   "200 https://www.cartier.com/en-nl.sitemap.xml"
+  ]
+ }
+}
